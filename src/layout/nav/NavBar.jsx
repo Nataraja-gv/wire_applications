@@ -34,9 +34,19 @@ const Navbar = () => {
     <Box
       sx={{
         width: "92%",
-        height: "55px",
+        height: {
+          xs: "40px",
+          sm: "55px",
+          md: "55px",
+          lg: "55px",
+        },
         top: "32px",
-        padding: "6px 51px",
+        padding:{
+          xs: "6px 20px",
+            sm: "6px 51px",
+            md: "6px 51px",
+            lg: "6px 51px"
+        }  ,
         gap: "0px",
         borderRadius: "128px ",
         border: "1px solid gray",
@@ -46,12 +56,20 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        verticalAlign: "middle",
         margin: "auto",
         zIndex: "5"
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
-        <Box component="img" src={toco_logo} sx={{ maxWidth: "3rem" }} />
+        <Box component="img" src={toco_logo} sx={{
+          maxWidth: {
+            xs: "2.5rem",
+            sm: "3rem",
+            md: "3rem",
+            lg: "3rem"
+          },
+        }} />
       </Link>
       {matches ?
         //mobile view
@@ -68,7 +86,7 @@ const Navbar = () => {
             anchor="right"
             open={openDrawer}
             onClose={handleDrawerClose}
-            // ModalProps={{ disableBackdropClick: true }}
+          // ModalProps={{ disableBackdropClick: true }}
           >
             <Box
               sx={{
@@ -91,7 +109,7 @@ const Navbar = () => {
               <List >
                 {navItems.map((item, index) => (
                   <ListItem
-                    
+
                     key={index}
                     onClick={handleDrawerClose}
                     disableGutters
@@ -113,8 +131,8 @@ const Navbar = () => {
             </Box>
 
           </Drawer>
-        </>) 
-        
+        </>)
+
         :
 
         //desktop view
