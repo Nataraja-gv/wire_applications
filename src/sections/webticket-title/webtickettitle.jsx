@@ -13,15 +13,16 @@ const Webtickettitle = () => {
             <Stack
                 mx="auto"
                 alignItems={{ xs: 'center', sm: 'center' }}
-                spacing={3}
+                spacing={2}
+                width="100%"
             >
                 <Typography variant="h1" sx={{
                     ...theme.typography.h1,
                     fontSize: {
-                        xs: '32px',
+                        xs: '25px',
                         sm: '36px',
                         md: '48px',
-                        lg: '64px',
+                        lg: '58px',
                     },
                 }}>
                     Experience Unforgettable Moments with Us
@@ -34,10 +35,10 @@ const Webtickettitle = () => {
                 mt={2}
                 
                 mb={{
-                    xs:"240px",
-                    sm:"250px",
+                    xs:"230px",
+                    sm:"200px",
                     md:"280px" ,
-                    lg:"240px",
+                    lg:"350px",
                 }}
             >
                 <ButtonBtn btnName="Explore Events" />
