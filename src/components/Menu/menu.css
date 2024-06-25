@@ -1,0 +1,8 @@
+.menucard-image{
+    height: 250px;
+}
+@media (max-width: 600px){
+    .menucard-image{
+        height: 130px;
+    }
+}

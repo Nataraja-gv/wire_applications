@@ -11,18 +11,14 @@
   .eventCard-section {
     padding: 10px;
     width: 48%;
-  height: 400px;
-
+    height: 400px;
   }
 }
 
-
 @media screen and (max-width: 960px) {
-    .eventCard-section {
-      padding: 10px;
-      width: 48%;
-  height: 420px;
-
-    }
+  .eventCard-section {
+    padding: 10px;
+    width: 48%;
+    height: 420px;
   }
-  
+}
