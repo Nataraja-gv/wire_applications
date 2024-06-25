@@ -23,7 +23,7 @@ const Gallery = () => {
                 }}
             >
                 {galleryData.map((menu, index) => (
-                    <Grid item xs={12} sm={6} md={3} key={index}>
+                    <Grid item xs={6} sm={6} md={3} key={index}>
                         <GalleryCard
                             Image={menu.img}
 
