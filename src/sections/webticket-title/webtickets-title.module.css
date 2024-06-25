@@ -1,0 +1,10 @@
+/* .header {
+    font-size: 158px;
+    font-weight: 700;
+    line-height: 84.46px;
+    text-align: left;
+    background: #FFFFFF;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent; /* Corrected property name */
+    /* width: fit-content;
+} */ 
