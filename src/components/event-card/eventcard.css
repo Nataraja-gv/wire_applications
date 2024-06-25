@@ -1,0 +1,8 @@
+.eventimages{
+    height: 350px;
+}
+@media screen and (max-width: 600px) {
+    .eventimages{
+        height: 250px;
+    }
+}

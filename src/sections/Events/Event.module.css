@@ -1,15 +1,28 @@
-
-
-
-
 .eventCard-section {
- border: 2px solid #eeeeee;
- padding: 20px;
- border-radius: 10px;
- width:32%;
- margin: auto;
- height: 500px;
- background-color: white;
- 
-
+  border: 2px solid #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 32%;
+  margin: auto;
+  height: 500px;
+  background-color: white;
 }
+@media screen and (max-width: 600px) {
+  .eventCard-section {
+    padding: 10px;
+    width: 48%;
+  height: 400px;
+
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+    .eventCard-section {
+      padding: 10px;
+      width: 48%;
+  height: 420px;
+
+    }
+  }
+  
