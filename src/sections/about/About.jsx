@@ -108,7 +108,7 @@ const About = () => {
             sx={{
               width: "100%",
               height:{
-                xs: "400px",
+                xs: "300px",
                 sm: "500px",
                 md: "100%",
                 lg: "100%",
