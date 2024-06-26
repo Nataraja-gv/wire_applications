@@ -27,7 +27,7 @@ const HomePage = () => {
         <Gallery />
       </div>
       <div id="review">
-        <Review />
+        {/* <Review /> */}
       </div>
     </Box>
   );
