@@ -19,14 +19,14 @@ const ButtonBtn = ({ btnName }) => {
                     width: {
 
                         xs: '150px',
-                        sm: '250px',
+                        sm: '200px',
                         md: '250px',
                         lg: '250px',
 
                     },
                     height: {
                         xs: '40px',
-                        sm: '60px',
+                        sm: '50px',
                         md: '60px',
                         lg: '60px',
                     },

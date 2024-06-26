@@ -6,10 +6,10 @@ const About = () => {
   return (
     <Box width="90%" sx={{
       margin: {
-        xs: "0px auto 0px",
-        sm: "0px auto 0px",
-        md: "0px auto 0px",
-        lg: "0px auto 0px",
+        xs: "10px auto 0px",
+        sm: "10px auto 0px",
+        md: "50px auto 0px",
+        lg: "50px auto 20px",
       }
     }}>
       <Grid container spacing={4}>

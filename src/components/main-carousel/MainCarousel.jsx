@@ -21,6 +21,7 @@ const MainCarousel = ({ carouselinfo = [] }) => {
         customTransition="all 2s ease in"
         keyBoardControl={true}
         renderDotsOutside={true}
+        swipeable={false}
         containerClass="carousel-container"
         infinite={true}
         showDots={false}
@@ -59,8 +60,8 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                 sx={{
                   fontSize: {
                     xs: "25px",
-                    sm: "30px",
-                    md: "50px",
+                    sm: "35px",
+                    md: "45px",
                     lg: "50px",
                   },
                 }}
