@@ -20,13 +20,15 @@ export default function Table() {
 
   return (
     <StyledDiv>
-      <Container  >
+      <Container width="100%">
         <Grid container spacing={0} sx={{}}>
-          <Grid item xs={12} lg={5}>
+          <Grid item xs={12} sm={5} md={5} lg={5}>
             <Book />
           </Grid>
-          <Grid item xs={12} lg={7}>
+          <Grid item xs={12} sm={5} md={5} lg={5}>
             {/* Other content for the second column */}
+            {/* <Book /> */}
+
           </Grid>
         </Grid>
       </Container>

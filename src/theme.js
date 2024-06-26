@@ -117,48 +117,67 @@ export const theme = createTheme({
       //   fontSize: "2.0rem",
       // },
     },
-
-    subtitle2: {
-      fontWeight: 600,
-      fontSize: "1rem",
+    labeltext:{
+     fontSize:"15px",
+     fontWeight:"500",
+     color:"black",
+     
     },
 
-    h3: {
-      fontWeight: 600,
-      fontSize: "24px",
-    },
+    menutitle: {
+      textOverflow:"ellipsis",
+      overflow:"hidden",
+      textWrap:"nowrap",
+      fontWeight:"bold",
+      fontSize:"18px"
 
-    h4: {
-      fontWeight: 600,
-      fontSize: "1.25rem",
     },
-
-    h5: {
-      fontWeight: 500,
-      fontSize: "1rem",
-    },
-
-    body1: {
-      fontFamily: "Poppins",
-      fontWeight: 400,
-      fontSize: "0.875rem",
-    },
-
     body2: {
       fontWeight: 500,
       fontSize: "0.875rem",
+      color:"gray"
     },
+    // subtitle: {
+    //   fontWeight: 600,
+    //   fontSize: "1.25rem",
+    // },
 
-    caption: {
-      fontFamily: "DM Sans",
-      fontWeight: "400",
-      fontSize: "0.85rem",
-    },
+    // h3: {
+    //   fontWeight: 600,
+    //   fontSize: "24px",
+    // },
 
-    subtitle: {
-      fontWeight: 600,
-      fontSize: "1.25rem",
-    },
+    // h4: {
+    //   fontWeight: 600,
+    //   fontSize: "1.25rem",
+    // },
+
+    // h5: {
+    //   fontWeight: 500,
+    //   fontSize: "1rem",
+    // },
+
+    // body1: {
+    //   fontFamily: "Poppins",
+    //   fontWeight: 400,
+    //   fontSize: "0.875rem",
+    // },
+
+    // body2: {
+    //   fontWeight: 500,
+    //   fontSize: "0.875rem",
+    // },
+
+    // caption: {
+    //   fontFamily: "DM Sans",
+    //   fontWeight: "400",
+    //   fontSize: "0.85rem",
+    // },
+
+    // subtitle: {
+    //   fontWeight: 600,
+    //   fontSize: "1.25rem",
+    // },
 
     eventh1: {
       fontSize: "25px",
