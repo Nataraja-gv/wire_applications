@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Button from '@mui/material/Button';
-
+ 
 const ButtonBtn = ({ btnName }) => {
     return (
         <Box>
@@ -50,3 +50,4 @@ const ButtonBtn = ({ btnName }) => {
 }
 
 export default ButtonBtn;
+ 

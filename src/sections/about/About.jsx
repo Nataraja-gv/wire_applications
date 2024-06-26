@@ -16,8 +16,8 @@ const About = () => {
         {/* Left Column - About Text */}
         <Grid item xs={12} md={6} sm={12} lg={6}>
           <Stack sx={{ marginTop: "10px" }}>
-            <Typography variant="h2" sx={{
-              ...theme.typography.title,
+            <Typography variant="title" sx={{
+              
               fontSize: {
                 xs: "25px",
                 sm: "30px",
@@ -29,18 +29,18 @@ const About = () => {
             </Typography>
           </Stack>
           <Box sx={{ marginTop: "5px" }}>
-            <Typography sx={{
-              ...theme.typography.p,
+            <Typography variant="h2" sx={{
+              
               fontSize: {
                 xs: "16px",
                 sm: "16px",
-                md: "20px",
-                lg: "20px",
+                md: "16px",
+                lg: "16px",
               },
               lineHeight: {
                 xs: "28px",
                 sm: "24px",
-                md: "20px",
+                md: "24px",
                 lg: "28px",
               }
             }}>
@@ -52,18 +52,18 @@ const About = () => {
 
             </Typography>
 
-            <Typography sx={{
-              ...theme.typography.p,
+            <Typography variant="h2" sx={{
+              
               fontSize: {
                 xs: "16px",
                 sm: "16px",
-                md: "20px",
-                lg: "20px",
+                md: "16px",
+                lg: "16px",
               },
               lineHeight: {
                 xs: "28px",
                 sm: "24px",
-                md: "20px",
+                md: "24px",
                 lg: "28px",
               }
             }}>
@@ -75,18 +75,18 @@ const About = () => {
               planned and flawlessly executed.
             </Typography>
 
-            <Typography sx={{
-              ...theme.typography.p,
+            <Typography variant="h2" sx={{
+               
               fontSize: {
                 xs: "16px",
                 sm: "16px",
-                md: "20px",
-                lg: "20px",
+                md: "16px",
+                lg: "16px",
               },
               lineHeight: {
                 xs: "28px",
                 sm: "24px",
-                md: "20px",
+                md: "24px",
                 lg: "28px",
               }
             }}>

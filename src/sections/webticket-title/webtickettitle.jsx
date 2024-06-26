@@ -6,8 +6,7 @@ const Webtickettitle = () => {
     const theme = useTheme();
 
     return (
-        <Box
-            mt={{ xs: 6, sm: 8, md: 10 }}
+        <Box  mt={{ xs: 6, sm: 8, md: 10 }}
             mb={{ xs: 20, sm: 30, md: 0 }}
         >
             <Stack

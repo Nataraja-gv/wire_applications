@@ -1,4 +1,13 @@
-import { Box, IconButton, List, Drawer, ListItem, ListItemText, Stack, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  List,
+  Drawer,
+  ListItem,
+  ListItemText,
+  Stack,
+  useMediaQuery,
+} from "@mui/material";
 import { Link } from "react-scroll";
 import toco_logo from "../../assets/images/toca (2).png";
 import Typography from "@mui/material/Typography";
@@ -6,7 +15,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 // import Drawer from '@mui/material/Drawer';
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-
 
 const navItems = [
   { name: "About us", path: "about" },
@@ -20,7 +28,7 @@ const navItems = [
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
-  const matches = useMediaQuery("(max-width:960px)")
+  const matches = useMediaQuery("(max-width:960px)");
 
   const handleDrawerOpen = () => {
     setOpenDrawer(true);
@@ -34,19 +42,19 @@ const Navbar = () => {
     <Box
       sx={{
         width: "92%",
-        height: {
-          xs: "40px",
-          sm: "55px",
-          md: "55px",
-          lg: "55px",
-        },
+        // height: {
+        //   xs: "40px",
+        //   sm: "55px",
+        //   md: "55px",
+        //   lg: "55px",
+        // },
         top: "32px",
-        padding:{
+        padding: {
           xs: "6px 20px",
-            sm: "6px 51px",
-            md: "6px 51px",
-            lg: "6px 51px"
-        }  ,
+          sm: "6px 51px",
+          md: "6px 51px",
+          lg: "6px 51px",
+        },
         gap: "0px",
         borderRadius: "128px ",
         border: "1px solid gray",
@@ -58,35 +66,37 @@ const Navbar = () => {
         alignItems: "center",
         verticalAlign: "middle",
         margin: "auto",
-        zIndex: "5"
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
-        <Box component="img" src={toco_logo} sx={{
-          maxWidth: {
-            xs: "2.5rem",
-            sm: "3rem",
-            md: "3rem",
-            lg: "3rem"
-          },
-        }} />
+        <Box
+          component="img"
+          src={toco_logo}
+          sx={{
+            maxWidth: {
+              xs: "2.5rem",
+              sm: "3rem",
+              md: "3rem",
+              lg: "3rem",
+            },
+          }}
+        />
       </Link>
-      {matches ?
+      {matches ? (
         //mobile view
-        (<>
+        <>
           <IconButton
-
+            color="primary"
             onClick={handleDrawerOpen}
-
-            sx={{ color: "#8976fd", ml: "auto" }}
+            sx={{ ml: "auto" }}
           >
-            <MenuIcon size="medium" />
+            <MenuIcon size="large" />
           </IconButton>
           <Drawer
             anchor="right"
             open={openDrawer}
             onClose={handleDrawerClose}
-          // ModalProps={{ disableBackdropClick: true }}
+            // ModalProps={{ disableBackdropClick: true }}
           >
             <Box
               sx={{
@@ -106,10 +116,9 @@ const Navbar = () => {
               >
                 <CloseIcon />
               </IconButton>
-              <List >
+              <List>
                 {navItems.map((item, index) => (
                   <ListItem
-
                     key={index}
                     onClick={handleDrawerClose}
                     disableGutters
@@ -129,14 +138,11 @@ const Navbar = () => {
                 ))}
               </List>
             </Box>
-
           </Drawer>
-        </>)
-
-        :
-
+        </>
+      ) : (
         //desktop view
-        (<Stack direction="row" spacing={4} >
+        <Stack direction="row" spacing={4}>
           {navItems.map((item, index) => (
             <Link
               to={item.path}
@@ -147,29 +153,11 @@ const Navbar = () => {
               exact="true"
               offset={-100}
             >
-              <Typography
-                color="initial"
-                sx={{
-                  fontSize: '17px',
-                  fontWeight: 400,
-                  lineHeight: '51px',
-                  textAlign: 'left',
-                  backgroundColor: '#000000',
-                  color: 'transparent',
-                  backgroundClip: 'text',
-                  transition: 'color 0.3s ease-in-out',
-                  '&:hover': {
-                    color: '#8976fd',
-                  },
-
-
-                }}
-              >
-                {item.name}
-              </Typography>
+              <Typography variant="navtitle">{item.name}</Typography>
             </Link>
           ))}
-        </Stack>)}
+        </Stack>
+      )}
     </Box>
   );
 };
