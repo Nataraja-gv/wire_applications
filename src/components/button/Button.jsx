@@ -18,14 +18,14 @@ const ButtonBtn = ({ btnName }) => {
                     color: "success",
                     width: {
 
-                        xs: '200px',
+                        xs: '150px',
                         sm: '250px',
                         md: '250px',
                         lg: '250px',
 
                     },
                     height: {
-                        xs: '50px',
+                        xs: '40px',
                         sm: '60px',
                         md: '60px',
                         lg: '60px',
@@ -35,7 +35,7 @@ const ButtonBtn = ({ btnName }) => {
                     border: "1px solid",
                     opacity: 1,
                     padding:  {
-                        xs: "5px 10px",
+                        xs: "0px 0px",
                         sm: "10px 20px",
                         md: "15px 30px",
                         lg: "20px 40px",

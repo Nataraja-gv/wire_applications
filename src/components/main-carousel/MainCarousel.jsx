@@ -42,7 +42,7 @@ const MainCarousel = ({ carouselinfo = [] }) => {
               sx={{
                 position: "absolute",
                 top: {
-                  xs: "50%",
+                  xs: "55%",
                   sm: "50%",
                   md: "50%",
                   lg: "50%",
@@ -67,7 +67,16 @@ const MainCarousel = ({ carouselinfo = [] }) => {
               >
                 {item.title}
               </Typography>
-              <Stack sx={{ mt: 5 }}>
+              <Stack
+                sx={{
+                  marginTop: {
+                    xs: "15px",
+                    md: "20px",
+                    sm: "20px",
+                    lg: "25px",
+                  },
+                }}
+              >
                 <ButtonBtn btnName="Explore Events" />
               </Stack>
             </Box>
