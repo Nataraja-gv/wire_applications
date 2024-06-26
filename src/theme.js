@@ -163,35 +163,41 @@ export const theme = createTheme({
     eventh1: {
       fontSize: "25px",
       fontWeight: "bold",
-      lineHeight: "25.84px",
+      lineHeight: "normal",
       background: "#0D0D0D",
       WebkitBackgroundClip: "text",
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
+       display:"block",
+      // backgroundColor:"green"
     },
 
     eventtime: {
       fontSize: "16px",
       fontWeight: 500,
-      lineHeight: "21.11px",
+      lineHeight: "normal",
       background: "#0D0D0D",
       WebkitBackgroundClip: "text",
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
+      display:"block"
+
     },
 
     onWardsTitle: {
       fontSize: "24px",
       fontWeight: 700,
-      lineHeight: "28.15px",
+      lineHeight: "normal",
       textAlign: "left",
       background: "#0D0D0D",
       WebkitBackgroundClip: "text",
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
+      display:"block"
+
     },
   },
 
