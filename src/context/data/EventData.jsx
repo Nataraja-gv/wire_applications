@@ -18,11 +18,11 @@ export const eventData = [
     EventImage: event3,
     Title: "Spring Music Festival",
   },
-  {
-    Id: 4,
-    EventImage: event1,
-    Title: "Spring Music Festival",
-  },
+  // {
+  //   Id: 4,
+  //   EventImage: event1,
+  //   Title: "Spring Music Festival",
+  // },
 
   // {
   //     Id:5,

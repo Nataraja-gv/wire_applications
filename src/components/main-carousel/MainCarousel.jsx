@@ -43,8 +43,8 @@ const MainCarousel = ({ carouselinfo = [] }) => {
               sx={{
                 position: "absolute",
                 top: {
-                  xs: "55%",
-                  sm: "50%",
+                  xs: "44%",
+                  sm: "45%",
                   md: "50%",
                   lg: "50%",
                 },
