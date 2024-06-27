@@ -32,11 +32,11 @@ const CarouselReview = () => {
       containerClass="carousel-container"
       infinite={true}
       showDots={false}
-      autoPlay={true}
+      // autoPlay={true}
       dotListClass={"react-multi-carousel-dot-list custom-dot-list-style"}
-      autoPlaySpeed={2000}
+      // autoPlaySpeed={2000}
       itemClass="carousel-item-padding-40-px itemimage"
-      removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
+      removeArrowOnDeviceType={["desktop", "", "tablet"]}
     >
       {reviews.map((reviewer, index) => (
         <Box
