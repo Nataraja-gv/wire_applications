@@ -44,9 +44,9 @@ const About = () => {
                   lg: "16px",
                 },
                 lineHeight: {
-                  xs: "28px",
+                  xs: "20px",
                   sm: "24px",
-                  md: "24px",
+                  md: "20px",
                   lg: "28px",
                 },
               }}
@@ -69,7 +69,7 @@ const About = () => {
                   lg: "16px",
                 },
                 lineHeight: {
-                  xs: "28px",
+                  xs: "20px",
                   sm: "24px",
                   md: "24px",
                   lg: "28px",
@@ -89,13 +89,12 @@ const About = () => {
               sx={{
                 fontSize: {
                   xs: "14px",
-
                   sm: "16px",
                   md: "16px",
                   lg: "16px",
                 },
                 lineHeight: {
-                  xs: "28px",
+                  xs: "20px",
                   sm: "24px",
                   md: "24px",
                   lg: "28px",
@@ -120,7 +119,7 @@ const About = () => {
             sx={{
               width: "100%",
               height: {
-                xs: "300px",
+                xs: "200px",
                 sm: "400px",
                 md: "85%",
                 lg: "90%",
