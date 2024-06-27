@@ -38,7 +38,7 @@ const About = () => {
               variant="h2"
               sx={{
                 fontSize: {
-                  xs: "16px",
+                  xs: "14px",
                   sm: "16px",
                   md: "16px",
                   lg: "16px",
@@ -62,7 +62,8 @@ const About = () => {
               variant="h2"
               sx={{
                 fontSize: {
-                  xs: "16px",
+                  xs: "14px",
+
                   sm: "16px",
                   md: "16px",
                   lg: "16px",
@@ -87,7 +88,8 @@ const About = () => {
               variant="h2"
               sx={{
                 fontSize: {
-                  xs: "16px",
+                  xs: "14px",
+
                   sm: "16px",
                   md: "16px",
                   lg: "16px",

@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
+import { CustomLeftArrow, CustomRightArrow } from "../../components/carousel-arrows/carouselarrow";
 
 const CarouselReview = () => {
   const { reviews } = useContext(EventContext);
@@ -32,11 +33,13 @@ const CarouselReview = () => {
       containerClass="carousel-container"
       infinite={true}
       showDots={false}
+      customLeftArrow={<CustomLeftArrow />}
+      customRightArrow={<CustomRightArrow />}
       // autoPlay={true}
       dotListClass={"react-multi-carousel-dot-list custom-dot-list-style"}
       // autoPlaySpeed={2000}
       itemClass="carousel-item-padding-40-px itemimage"
-      removeArrowOnDeviceType={["desktop", "", "tablet"]}
+      removeArrowOnDeviceType={["desktop", "", ""]}
     >
       {reviews.map((reviewer, index) => (
         <Box

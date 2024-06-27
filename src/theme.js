@@ -86,6 +86,7 @@ export const theme = createTheme({
     h2: {
       fontWeight: 500,
       fontSize: "32px",
+      lineHeight: "0px",
       background: "#000000",
       backgroundClip: "text",
       WebkitBackgroundClip: "text",
@@ -93,12 +94,12 @@ export const theme = createTheme({
       textAlign: "justify",
       wordSpacing:"0px",
       margin: "20px 0px 0px",
-      "@media (max-width:1200px)": {
-        fontSize: "5.5rem",
-      },
-      "@media (max-width:960px)": {
-        fontSize: "2.0rem",
-      },
+      // "@media (max-width:1200px)": {
+      //   fontSize: "5.5rem",
+      // },
+      // "@media (max-width:960px)": {
+      //   fontSize: "2.0rem",
+      // },
       // "@media (max-width:600px)": {
       //   fontSize: "5.5rem",
       // },

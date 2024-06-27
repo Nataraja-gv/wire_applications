@@ -1,0 +1,9 @@
+.custom-arrow {
+    font-size: 25px;
+    background-color: rgb(177, 155, 250);
+    z-index: 1;
+    border: none;
+    outline: none;
+    padding: 0 2px;
+    border-radius: 50%;
+  }
