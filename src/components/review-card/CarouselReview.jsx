@@ -44,10 +44,10 @@ const CarouselReview = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            padding: "10px",
+            padding: "20px",
             borderRadius: "10px",
             backgroundColor: "white",
-            width: "85%",
+            width: "90%",
             height:"auto",
             margin :"auto",
             border:"2px solid gray"

@@ -153,13 +153,14 @@ export const theme = createTheme({
       lineHeight: "normal",
     },
    subdescription: {
-  fontSize: "16px",
+  fontSize: "12px",
   lineHeight: "normal",
   display: "-webkit-box",
   WebkitLineClamp: 3,
   WebkitBoxOrient: "vertical",
   overflow: "hidden",
   textAlign:"justify",
+  wordSpacing: "0px"
 },
 
 
