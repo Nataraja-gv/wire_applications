@@ -18,7 +18,7 @@ const StyledDiv = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   color: "goldenrod",
-  borderRadius: "10px",
+  // borderRadius: "10px",
 });
 
 function Review() {
@@ -43,7 +43,7 @@ function Review() {
 
   return (
     <Box
-      width="90%"
+      width="100%"
       sx={{
         margin: {
           xs: "50px auto 0px",
