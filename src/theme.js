@@ -72,7 +72,9 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       fontSize: "40px",
+       
       fontWeight: "bold",
+    
       "@media (max-width:600px)": {
         fontSize: "100px",
       },
@@ -89,6 +91,7 @@ export const theme = createTheme({
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
       textAlign: "justify",
+      wordSpacing:"0px",
       margin: "20px 0px 0px",
       "@media (max-width:1200px)": {
         fontSize: "5.5rem",

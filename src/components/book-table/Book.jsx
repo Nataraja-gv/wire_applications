@@ -11,6 +11,7 @@ const Book = () => {
         display: "inline-block",
         border: "1px solid #FFFFFF",
         backgroundColor: " #FFFFFFB2",
+        opacity:"0.8"
       }}
     >
       <Grid container spacing={2}>

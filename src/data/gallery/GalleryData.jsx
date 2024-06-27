@@ -44,21 +44,21 @@ import img12 from "../../assets/gallery/img12.png"
       img: img8,
       title: 'Fern',
     },
-    {
-      img: img9,
-      title: 'Mushrooms',
-    },
-    {
-      img: img10,
-      title: 'Tomato basil',
-    },
-    {
-      img: img11,
-      title: 'Sea star',
-    },
-    {
-      img: img12,
-      title: 'Bike',
-    },
+    // {
+    //   img: img9,
+    //   title: 'Mushrooms',
+    // },
+    // {
+    //   img: img10,
+    //   title: 'Tomato basil',
+    // },
+    // {
+    //   img: img11,
+    //   title: 'Sea star',
+    // },
+    // {
+    //   img: img12,
+    //   title: 'Bike',
+    // },
     
   ];

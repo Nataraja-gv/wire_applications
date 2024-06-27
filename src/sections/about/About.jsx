@@ -17,7 +17,7 @@ const About = () => {
     >
       <Grid container spacing={4}>
         {/* Left Column - About Text */}
-        <Grid item xs={12} md={6} sm={12} lg={6}>
+        <Grid item xs={12} md={6} sm={12} lg={7}>
           <Stack sx={{ marginTop: "10px" }}>
             <Typography
               variant="title"
@@ -111,7 +111,7 @@ const About = () => {
         </Grid>
 
         {/* Right Column - Image */}
-        <Grid item xs={12} md={6} sm={12} lg={6}>
+        <Grid item xs={12} md={6} sm={12} lg={5}>
           <Box
             component="img"
             src={about_icon}
@@ -119,9 +119,9 @@ const About = () => {
               width: "100%",
               height: {
                 xs: "300px",
-                sm: "500px",
-                md: "80%",
-                lg: "80%",
+                sm: "400px",
+                md: "85%",
+                lg: "90%",
               },
             }}
             alt="About Image"

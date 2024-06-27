@@ -22,7 +22,7 @@ export default function Table() {
     <StyledDiv>
       <Container width="100%">
         <Grid container spacing={0} sx={{}}>
-          <Grid item xs={12} sm={5} md={5} lg={5}>
+          <Grid item xs={12} sm={7} md={5} lg={5}>
             <Book />
           </Grid>
           <Grid item xs={12} sm={5} md={5} lg={5}>

@@ -7,7 +7,6 @@ import styles from "./Event.module.css";
 
 const Event = () => {
   const { eventData } = useContext(EventContext);
-  console.log(eventData, "eventData");
 
   return (
     <Stack
@@ -34,24 +33,30 @@ const Event = () => {
       >
         Upcoming Events
       </Typography>
-      <Grid
-        sx={{
-          width: "100%",
-          display: "flex",
-          flexWrap: "wrap",
-          rowGap: "20px",
-          marginTop:{
-            xs:"20px",
-            sm:"20px",
-            md:"20px",
-            lg:"20px"
-          },
-        }}
-      >
+      <Grid container spacing={2}>
         {eventData.map((item, index) => (
-          <div key={index} className={styles["eventCard-section"]}>
-            <EventCards image={item.EventImage} title={item.Title} />
-          </div>
+          <Grid
+            key={index}
+            item
+            xs={6} // Full width on extra small screens
+            sm={6} // Full width on small screens
+            md={4}  // 1/3 width on medium screens
+            lg={4}  // 1/3 width on large screens
+            sx={{
+              width: "100%",
+              rowGap: "20px",
+              marginTop: {
+                xs: "20px",
+                sm: "20px",
+                md: "20px",
+                lg: "20px",
+              },
+            }}
+          >
+            <div className={styles["eventCard-section"]}>
+              <EventCards image={item.EventImage} title={item.Title} />
+            </div>
+          </Grid>
         ))}
       </Grid>
     </Stack>

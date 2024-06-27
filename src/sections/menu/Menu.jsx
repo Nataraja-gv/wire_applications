@@ -36,7 +36,7 @@ const Menu = () => {
         Menu
       </Typography>
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={3} justifyContent="start">
         {MenuData.map((menu, index) => (
           <Grid item xs={6} sm={6} md={3} key={index}>
             <MenuCard

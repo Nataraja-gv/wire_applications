@@ -2,7 +2,7 @@
   border: 2px solid #eeeeee;
   padding: 20px;
   border-radius: 10px;
-  width: 32%;
+  width: 100%;
   margin: auto;
   height: auto;
    background-color: white; 
@@ -13,7 +13,7 @@
  @media screen and (max-width: 600px) {
   .eventCard-section {
     padding: 10px;
-    width: 48%;
+   
      
   }
 }
@@ -21,7 +21,7 @@
 @media screen and (max-width: 960px) {
   .eventCard-section {
     padding: 10px;
-    width: 48%;
+    
     
   }
 } 
@@ -29,7 +29,7 @@
 @media screen and(max-width:1260px) {
   .eventCard-section {
     padding: 10px;
-    width: 48%;
+    
      
   }
 }
