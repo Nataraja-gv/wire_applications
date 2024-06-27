@@ -105,7 +105,7 @@ export const theme = createTheme({
     },
 
     h1: {
-      fontSize: "50px", 
+      fontSize: "50px",
       fontWeight: 700,
       lineHeight: "normal",
       textAlign: "center",
@@ -117,26 +117,49 @@ export const theme = createTheme({
       //   fontSize: "2.0rem",
       // },
     },
-    labeltext:{
-     fontSize:"15px",
-     fontWeight:"500",
-     color:"black",
-     
+    labeltext: {
+      fontSize: "15px",
+      fontWeight: "500",
+      color: "black",
     },
 
     menutitle: {
-      textOverflow:"ellipsis",
-      overflow:"hidden",
-      textWrap:"nowrap",
-      fontWeight:"bold",
-      fontSize:"18px"
-
+      textOverflow: "ellipsis",
+      overflow: "hidden",
+      textWrap: "nowrap",
+      fontWeight: "bold",
+      fontSize: "18px",
     },
     body2: {
       fontWeight: 500,
       fontSize: "0.875rem",
-      color:"gray"
+      color: "gray",
     },
+
+    reviewName: {
+      fontSize: "20px",
+      textWrap: "nowrap",
+      textOverflow: "ellipsis",
+      overflow: "hidden",
+      fontWeight: "600",
+    },
+
+    subtitle2: {
+      fontWeight: 400,
+      fontSize: "14px",
+      lineHeight: "normal",
+    },
+   subdescription: {
+  fontSize: "16px",
+  lineHeight: "normal",
+  display: "-webkit-box",
+  WebkitLineClamp: 3,
+  WebkitBoxOrient: "vertical",
+  overflow: "hidden",
+  textAlign:"justify",
+},
+
+
     // subtitle: {
     //   fontWeight: 600,
     //   fontSize: "1.25rem",
@@ -174,11 +197,6 @@ export const theme = createTheme({
     //   fontSize: "0.85rem",
     // },
 
-    // subtitle: {
-    //   fontWeight: 600,
-    //   fontSize: "1.25rem",
-    // },
-
     eventh1: {
       fontSize: "25px",
       fontWeight: "bold",
@@ -188,7 +206,7 @@ export const theme = createTheme({
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
-       display:"block",
+      display: "block",
       // backgroundColor:"green"
     },
 
@@ -201,8 +219,7 @@ export const theme = createTheme({
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
-      display:"block"
-
+      display: "block",
     },
 
     onWardsTitle: {
@@ -215,8 +232,7 @@ export const theme = createTheme({
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
-      display:"block"
-
+      display: "block",
     },
   },
 

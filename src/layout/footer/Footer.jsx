@@ -68,10 +68,10 @@ const Footer = () => {
                 ))}
             </Stack>
             <Stack direction="row" spacing={2} sx={{ padding: "10px", borderRadius: "5px", alignItems: "center", justifyContent: "center", }}>
-                <FacebookIcon sx={{ fontSize: "small", color: "red" }} />
-                <XIcon sx={{ fontSize: "small", color: "red" }} />
-                <InstagramIcon sx={{ fontSize: "small", color: "red" }} />
-                <LinkedInIcon sx={{ fontSize: "small", color: "red" }} />
+                <FacebookIcon color='primary' sx={{ fontSize: "small",   }} />
+                <XIcon color='primary' sx={{ fontSize: "small" }} />
+                <InstagramIcon color='primary' sx={{ fontSize: "small", }} />
+                <LinkedInIcon color='primary' sx={{ fontSize: "small",}} />
             </Stack>
         </Box>
     );

@@ -120,8 +120,8 @@ const About = () => {
               height: {
                 xs: "300px",
                 sm: "500px",
-                md: "100%",
-                lg: "100%",
+                md: "80%",
+                lg: "80%",
               },
             }}
             alt="About Image"

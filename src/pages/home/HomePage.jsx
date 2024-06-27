@@ -6,6 +6,7 @@ import Gallery from "../../sections/gallery/Gallery";
 import MainCarousel from "../../components/main-carousel/MainCarousel";
 import Table from "../../sections/Table/Table";
 import { mainCarouseldata } from "../../components/main-carousel/maindata";
+import Review from "../../sections/review/review";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,9 @@ const HomePage = () => {
       </div>
       <div id="gallery">
         <Gallery />
+      </div>
+      <div id="review">
+        <Review />
       </div>
     </Box>
   );

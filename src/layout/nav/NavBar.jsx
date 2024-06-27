@@ -151,7 +151,7 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-100}
+              offset={-150}
             >
               <Typography variant="navtitle">{item.name}</Typography>
             </Link>
