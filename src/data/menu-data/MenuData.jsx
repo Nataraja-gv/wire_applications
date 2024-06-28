@@ -32,17 +32,17 @@ export const MenuData=[
         menuname:"Food Menu",
         pages:4
     },
-    // {
-    //     id:4,
-    //     Image:image4,
-    //     MenuName:"Food Menu",
-    //     Pages:4
-    // },
+    {
+        id:5,
+        image:image4,
+        menuname:"Food Menu",
+        pages:4
+    },
 
-    // {
-    //     id:4,
-    //     Image:image4,
-    //     MenuName:"Food Menu",
-    //     Pages:4
-    // },
+    {
+        id:5,
+        image:image4,
+        menuname:"Food Menu",
+        pages:4
+    },
 ]

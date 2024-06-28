@@ -36,9 +36,43 @@ const Menu = () => {
         Menu
       </Typography>
 
-      <Grid container spacing={3} justifyContent="start">
+      <Grid
+        container
+        width="100%"
+        margin="auto"
+        spacing={2}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "nowrap",
+          overflowX: "auto",
+          // paddingBottom: "20px",
+          // marginTop: {
+          //   xs: "20px",
+          //   sm: "20px",
+          //   md: "20px",
+          //   lg: "20px",
+          // },
+          WebkitOverflowScrolling: "touch",
+          scrollbarWidth: "none",
+          "&::-webkit-scrollbar": {
+            display: "none", //
+          },
+        }}
+      >
         {MenuData.map((menu, index) => (
-          <Grid  item xs={6} sm={4} md={3} key={index}>
+          <Grid 
+          sx={{
+              minWidth: {
+                xs: "46.5%",
+                sm: "31.5%",
+                md: "23.4%",
+                lg: "23.8%",
+              },
+          }}
+              marginRight= "20px"
+          
+           key={index}>
             <MenuCard
               image={menu.image}
               menuname={menu.menuname}
@@ -47,6 +81,18 @@ const Menu = () => {
           </Grid>
         ))}
       </Grid>
+
+      {/* <Grid container spacing={3} justifyContent="start">
+        {MenuData.map((menu, index) => (
+          <Grid item xs={6} sm={6} md={3} key={index}>
+            <MenuCard
+              image={menu.image}
+              menuname={menu.menuname}
+              pages={menu.pages}
+            />
+          </Grid>
+        ))}
+      </Grid> */}
     </Box>
   );
 };
