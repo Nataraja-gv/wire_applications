@@ -35,63 +35,18 @@ const Menu = () => {
       >
         Menu
       </Typography>
-      <Grid
-        container
-        width="100%"
-        margin="auto"
-        spacing={0}
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "nowrap",
-          overflowX: "auto",
-          // paddingBottom: "20px",
-           
-          WebkitOverflowScrolling: "touch",
-          scrollbarWidth: "none",
-          "&::-webkit-scrollbar": {
-            display: "none", //
-          },
-        }}
-      >
+
+      <Grid container spacing={3} justifyContent="start">
         {MenuData.map((menu, index) => (
-          <Grid
-            item
-            key={index}
-            sx={{
-              minWidth: {
-                xs: "46%",
-                sm: "31%",
-                md: "23%",
-                lg: "23%",
-              },
-              border: "2px solid #eeeeee",
-              backgroundColor: "white",
-              marginRight: "20px",
-              borderRadius: "10px",
-            }}
-          >
-            {" "}
+          <Grid  item xs={6} sm={4} md={3} key={index}>
             <MenuCard
-              Image={menu.Image}
-              MenuName={menu.MenuName}
-              Pages={menu.Pages}
+              image={menu.image}
+              menuname={menu.menuname}
+              pages={menu.pages}
             />
           </Grid>
         ))}
       </Grid>
-
-      {/* <Grid container spacing={3} justifyContent="start">
-        {MenuData.map((menu, index) => (
-          <Grid item xs={6} sm={6} md={3} key={index}>
-            <MenuCard
-              Image={menu.Image}
-              MenuName={menu.MenuName}
-              Pages={menu.Pages}
-            />
-          </Grid>
-        ))}
-      </Grid> */}
     </Box>
   );
 };

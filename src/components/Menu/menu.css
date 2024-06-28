@@ -1,22 +1,21 @@
-.menucard-image{
+.menucard-image {
+  height: 250px;
+  border: "2px solid #eeeeee";
+}
+@media (max-width: 600px) {
+  .menucard-image {
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .menucard-image {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1260px) {
+  .menucard-image {
     height: 250px;
+  }
 }
-@media (max-width: 600px){
-    .menucard-image{
-        height: 130px;
-    }
-}
-
-
-@media (max-width: 960px){
-    .menucard-image{
-        height: 150px;
-    }
-}
-
-@media (max-width: 1260px){
-    .menucard-image{
-        height: 200px;
-    }
-}
-

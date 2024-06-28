@@ -6,43 +6,43 @@ import image4 from "../../assets/MenuImages/Images/Food.jpeg"
 export const MenuData=[
     {
         id:1,
-        Image: image1,
-        MenuName:"Cocktail",
-        Pages:4
+        image: image1,
+        menuname:"Cocktail",
+        pages:4
     },
 
 
     {
         id:2,
-        Image:image2,
-        MenuName:"Food Menu",
-        Pages:4
+        image:image2,
+        menuname:"Food Menu",
+        pages:4
     },
 
     {
         id:3,
-        Image:image3,
-        MenuName:"Drinks Menu",
-        Pages:4
+        image:image3,
+        menuname:"Drinks Menu",
+        pages:4
     },
 
     {
         id:4,
-        Image:image4,
-        MenuName:"Food Menu",
-        Pages:4
+        image:image4,
+        menuname:"Food Menu",
+        pages:4
     },
-    {
-        id:4,
-        Image:image4,
-        MenuName:"Food Menu",
-        Pages:4
-    },
+    // {
+    //     id:4,
+    //     Image:image4,
+    //     MenuName:"Food Menu",
+    //     Pages:4
+    // },
 
-    {
-        id:4,
-        Image:image4,
-        MenuName:"Food Menu",
-        Pages:4
-    },
+    // {
+    //     id:4,
+    //     Image:image4,
+    //     MenuName:"Food Menu",
+    //     Pages:4
+    // },
 ]

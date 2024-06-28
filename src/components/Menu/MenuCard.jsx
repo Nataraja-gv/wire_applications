@@ -1,45 +1,36 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import "./menu.css";
+import { Box } from "@mui/material";
 
-export default function MenuCard({ Image, MenuName, Pages }) {
+export default function MenuCard({ image, menuname, pages }) {
   return (
-    <Card
+    <Box
       sx={{
-        width: "100%",
+        border: "2px solid #eeeeee",
         padding: "15px",
-        height: {
-          xs: "230px",
-          sm: "230px",
-          md: "300px",
-          lg: "350px",
-        },
         borderRadius: "10px",
-        // boxShadow: "0px 2px 4px rgba(0, 0.2, 0, 0.5)",
       }}
     >
       <img
-        src={Image}
+        src={image}
         alt=""
         className="menucard-image"
         style={{ width: "100%", borderRadius: "5px" }}
       />
-      <CardContent sx={{ textAlign: "start" }}>
-        <Typography
-          variant="menutitle"
-          sx={{
-            fontSize: {
-              xs: "14px",
-              md: "16px",
-              sm: "16px",
-            },
-          }}
-        >
-          {MenuName}
-        </Typography>
-        <Typography variant="body2">{Pages} Pages</Typography>
-      </CardContent>
-    </Card>
+
+      <Typography
+        variant="menutitle"
+        sx={{
+          fontSize: {
+            xs: "14px",
+            md: "16px",
+            sm: "16px",
+          },
+        }}
+      >
+        {menuname}
+      </Typography>
+      <Typography variant="body2">{pages} Pages</Typography>
+    </Box>
   );
 }
