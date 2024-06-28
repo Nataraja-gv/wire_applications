@@ -45,7 +45,7 @@ const Event = () => {
           flexDirection: "row",
           flexWrap: "nowrap",
           overflowX: "auto",
-          paddingBottom: "20px",
+          // paddingBottom: "20px",
           marginTop: {
             xs: "20px",
             sm: "20px",
@@ -72,7 +72,7 @@ const Event = () => {
               },
               border: "2px solid #eeeeee",
               padding:{
-                xs: "10px",
+                xs: "15px",
                 sm: "20px",
                 md:"20px",
                 lg:"20px",
