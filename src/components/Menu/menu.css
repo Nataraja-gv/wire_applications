@@ -6,3 +6,17 @@
         height: 130px;
     }
 }
+
+
+@media (max-width: 960px){
+    .menucard-image{
+        height: 150px;
+    }
+}
+
+@media (max-width: 1260px){
+    .menucard-image{
+        height: 200px;
+    }
+}
+

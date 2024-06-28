@@ -19,8 +19,8 @@ export default function EventCards({ image, title }) {
       <Box
         sx={{
           marginTop: {
-            xs: "20px",
-            md: "20px",
+            xs: "10px",
+            md: "15px",
             sm: "20px",
             lg: "20px",
           },

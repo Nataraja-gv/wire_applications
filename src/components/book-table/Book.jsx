@@ -11,7 +11,7 @@ const Book = () => {
         display: "inline-block",
         border: "1px solid #FFFFFF",
         backgroundColor: " #FFFFFFB2",
-        opacity:"0.8"
+        opacity:"1"
       }}
     >
       <Grid container spacing={2}>
@@ -104,7 +104,7 @@ const Book = () => {
           />
         </Grid>
         <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary">
+          <Button fullWidth variant="contained" color="primary" >
             Send message
           </Button>
         </Grid>

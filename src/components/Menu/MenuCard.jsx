@@ -11,12 +11,12 @@ export default function MenuCard({ Image, MenuName, Pages }) {
         padding: "15px",
         height: {
           xs: "230px",
-          sm: "350px",
-          md: "350px",
+          sm: "230px",
+          md: "300px",
           lg: "350px",
         },
         borderRadius: "10px",
-        boxShadow: "0px 2px 4px rgba(0, 0.2, 0, 0.5)",
+        // boxShadow: "0px 2px 4px rgba(0, 0.2, 0, 0.5)",
       }}
     >
       <img
