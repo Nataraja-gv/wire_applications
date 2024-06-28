@@ -5,7 +5,7 @@ import Menu from "../../sections/menu/Menu";
 import Gallery from "../../sections/gallery/Gallery";
 import MainCarousel from "../../components/main-carousel/MainCarousel";
 import Table from "../../sections/Table/Table";
-import { mainCarouseldata } from "../../components/main-carousel/maindata";
+import { mainCarouseldata } from "../../data/maincarousel/maindata";
 import Review from "../../sections/review/review";
 
 const HomePage = () => {

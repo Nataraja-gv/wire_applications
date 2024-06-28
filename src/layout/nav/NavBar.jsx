@@ -12,7 +12,6 @@ import { Link } from "react-scroll";
 import toco_logo from "../../assets/images/toca (2).png";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-// import Drawer from '@mui/material/Drawer';
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -23,11 +22,11 @@ const navItems = [
   { name: "Menu", path: "menu" },
   { name: "Gallery", path: "gallery" },
   { name: "Reviews", path: "review" },
+  
 ];
 
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-
   const matches = useMediaQuery("(max-width:960px)");
 
   const handleDrawerOpen = () => {
@@ -42,13 +41,6 @@ const Navbar = () => {
     <Box
       sx={{
         width: "92%",
-        // height: {
-        //   xs: "40px",
-        //   sm: "55px",
-        //   md: "55px",
-        //   lg: "55px",
-        // },
-        top: "32px",
         padding: {
           xs: "6px 20px",
           sm: "6px 51px",
@@ -59,13 +51,19 @@ const Navbar = () => {
         borderRadius: "128px ",
         border: "1px solid gray",
         // backgroundColor: "#FFFFFF99",
-         backgroundColor:"white",
+        backgroundColor: "white",
         opacity: 1,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         verticalAlign: "middle",
         margin: "auto",
+        height:{
+          xs:"45px",
+          sm:"52px",
+          md:"58px",
+          lg:"64px"
+        }
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
@@ -96,7 +94,7 @@ const Navbar = () => {
             anchor="right"
             open={openDrawer}
             onClose={handleDrawerClose}
-            // ModalProps={{ disableBackdropClick: true }}
+            ModalProps={{ disableBackdropClick: true }}
           >
             <Box
               sx={{

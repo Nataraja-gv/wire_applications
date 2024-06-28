@@ -55,19 +55,7 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                 color: "#fff", // Example: Set text color
               }}
             >
-              <Typography
-                variant="h1"
-                sx={{
-                  fontSize: {
-                    xs: "25px",
-                    sm: "35px",
-                    md: "45px",
-                    lg: "50px",
-                  },
-                }}
-              >
-                {item.title}
-              </Typography>
+              <Typography variant="h1">{item.title}</Typography>
               <Stack
                 sx={{
                   marginTop: {

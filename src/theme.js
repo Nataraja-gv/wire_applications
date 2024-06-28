@@ -72,9 +72,9 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       fontSize: "40px",
-       
+
       fontWeight: "bold",
-    
+
       "@media (max-width:600px)": {
         fontSize: "100px",
       },
@@ -92,7 +92,7 @@ export const theme = createTheme({
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
       textAlign: "justify",
-      wordSpacing:"0px",
+      wordSpacing: "0px",
       margin: "20px 0px 0px",
       // "@media (max-width:1200px)": {
       //   fontSize: "5.5rem",
@@ -108,19 +108,28 @@ export const theme = createTheme({
       // },
     },
 
+
+
     h1: {
       fontSize: "50px",
       fontWeight: 700,
       lineHeight: "normal",
       textAlign: "center",
       color: " #FFFFFF",
-      // "@media (max-width:600px)": {
-      //   fontSize: "5px",
-      // },
-      // "@media (max-width:960px)": {
-      //   fontSize: "2.0rem",
-      // },
+      "@media (max-width:600px)": {
+        fontSize: "25px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "35px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "45px",
+      },
     },
+
+
+
     labeltext: {
       fontSize: "15px",
       fontWeight: "500",
@@ -153,17 +162,16 @@ export const theme = createTheme({
       fontSize: "14px",
       lineHeight: "normal",
     },
-   subdescription: {
-  fontSize: "12px",
-  lineHeight: "normal",
-  display: "-webkit-box",
-  WebkitLineClamp: 3,
-  WebkitBoxOrient: "vertical",
-  overflow: "hidden",
-  textAlign:"justify",
-  wordSpacing: "0px"
-},
-
+    subdescription: {
+      fontSize: "12px",
+      lineHeight: "normal",
+      display: "-webkit-box",
+      WebkitLineClamp: 3,
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+      textAlign: "justify",
+      wordSpacing: "0px",
+    },
 
     // subtitle: {
     //   fontWeight: 600,
@@ -244,4 +252,90 @@ export const theme = createTheme({
   carouselImages: {
     width: "100%",
   },
+
+  components:{
+    fontFamily:"Work Sans, sans-serif",
+    MuiButton: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.size === "large" && {
+            padding: "10px 16px 10px 16px",
+            gap: "4px",
+            height: "44px",
+            fontSize: "1rem",
+            fontFamily: "Poppins ",
+            fontWeight: 600,
+            alignContent: "center",
+            // "@media (max-width:600px)": {
+            //   fontSize: "0.6rem",
+            //   height: "28px",
+            //   padding: "5px 8px 5px 8px",
+            // },
+            // "@media (max-width:960px)": {
+            //   fontSize: "0.8rem",
+            //   height: "35px",
+            //   padding: "7px 10px 7px 10px",
+            // },
+          }),
+          ...(ownerState.size === "medium" && {
+            fontSize: "20px",
+            fontWeight: "600",
+            alignContent: "center",
+            textTransform: "capitalize",
+            width:"250px",  
+            height:"60px",
+            gap: "8px",
+            border: "1px solid",
+            opacity: 1,
+            padding:"20px 40px",
+
+            "@media (max-width:600px)": {
+              fontSize:"14px",
+              width:"150px",
+              height:"40px",
+              padding:"0px 0px"
+            },
+            "@media (min-width:601px) and  (max-width:960px)": {
+              fontSize:"20px",
+              width:"200px",
+              height:"50px",
+              padding:"10px 20px",
+
+            },
+
+            "@media (min-width:961px) and  (max-width:1260px)": {
+              fontSize:"20px",
+              width:"250px",
+              height:"60px",
+              md:"15px 30px",
+              
+               
+            },
+          }),
+          ...(ownerState.size === "small" && {
+            padding: "4px 8px",
+
+            height: "1.8125rem",
+            fontSize: "0.875rem",
+            fontFamily: "Poppins ",
+            fontWeight: 500,
+            alignContent: "center",
+            // "@media (max-width:600px)": {
+            //   fontSize: "0.5rem",
+            //   padding: "2px 4px",
+            //   height: "1.4rem",
+            // },
+            // "@media (max-width:960px)": {
+            //   fontSize: "0.65rem",
+            //   padding: "3px 6px",
+            //   height: "1.6rem",
+            // },
+          }),
+          textTransform: "none",
+          borderRadius: "4px",
+        }),
+      },
+    },
+
+  }
 });
