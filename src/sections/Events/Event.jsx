@@ -78,7 +78,7 @@ const Event = () => {
                 lg: "20px",
               },
               borderRadius: "10px",
-              marginRight: "20px",
+              marginRight: "10px",
               backgroundColor: "white",
             }}
           >

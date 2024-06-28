@@ -70,7 +70,7 @@ const Menu = () => {
                 lg: "23.8%",
               },
           }}
-              marginRight= "20px"
+              marginRight= "10px"
           
            key={index}>
             <MenuCard
