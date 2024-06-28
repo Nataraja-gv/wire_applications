@@ -32,18 +32,9 @@ const Gallery = () => {
       >
         Gallery
       </Typography>
-      <Grid
-        container
-        spacing={2}
-        sx={
-          {
-            // marginTop: "5px",
-            // backgroundColor:"green"
-          }
-        }
-      >
+      <Grid container spacing={1.5}>
         {galleryData.map((menu, index) => (
-          <Grid item xs={6} sm={6} md={3} key={index}>
+          <Grid item xs={4} sm={4} md={3} key={index}>
             <GalleryCard Image={menu.img} />
           </Grid>
         ))}

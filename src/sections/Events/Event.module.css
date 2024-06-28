@@ -1,4 +1,4 @@
- /* .eventCard-section {
+ /* /* .eventCard-section {
   border: 2px solid #eeeeee;
   padding: 20px;
   border-radius: 10px;
@@ -34,12 +34,12 @@
   }
 } */
 
-.eventdata-container{
+/* .eventdata-container{
   display: flex;
   gap:30px;
   justify-content: start;
   width: 100%;
   margin: 35px 0px 30px;
   overflow-x: scroll;
-}
-
+} */
+ 

@@ -6,10 +6,10 @@ import img5 from "../../assets/gallery/img5.jpg"
 import img6 from "../../assets/gallery/img6.jpg"
 import img7 from "../../assets/gallery/img7.png"
 import img8 from "../../assets/gallery/img8.jpg"
-import img9 from "../../assets/gallery/img9.jpg"
-import img10 from "../../assets/gallery/img10.jpg"
-import img11 from "../../assets/gallery/img11.png"
-import img12 from "../../assets/gallery/img12.png"
+// import img9 from "../../assets/gallery/img9.jpg"
+// import img10 from "../../assets/gallery/img10.jpg"
+// import img11 from "../../assets/gallery/img11.png"
+// import img12 from "../../assets/gallery/img12.png"
  
  export const galleryData = [
     {
