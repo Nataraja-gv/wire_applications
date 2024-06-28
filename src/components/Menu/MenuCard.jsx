@@ -7,7 +7,12 @@ export default function MenuCard({ image, menuname, pages }) {
     <Box
       sx={{
         border: "2px solid #eeeeee",
-        padding: "15px",
+        padding: {
+          xs:"8px",
+          sm: "15px",
+          md: "15px",
+          lg:"15px"
+        },
         borderRadius: "10px",
       }}
     >
