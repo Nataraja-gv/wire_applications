@@ -71,7 +71,12 @@ const Event = () => {
                 lg: "32%",
               },
               border: "2px solid #eeeeee",
-              padding: "20px",
+              padding:{
+                xs: "10px",
+                sm: "20px",
+                md:"20px",
+                lg:"20px",
+              },
               borderRadius: "10px",
               marginRight: "20px",
               backgroundColor: "white",
