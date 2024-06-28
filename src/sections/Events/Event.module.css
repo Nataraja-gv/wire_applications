@@ -1,4 +1,4 @@
- .eventCard-section {
+ /* .eventCard-section {
   border: 2px solid #eeeeee;
   padding: 20px;
   border-radius: 10px;
@@ -7,7 +7,7 @@
   height: auto;
    background-color: white; 
    /* background-color: green;  */
-} 
+/* } 
 
 
  @media screen and (max-width: 600px) {
@@ -16,9 +16,9 @@
    
      
   }
-}
+} */
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
   .eventCard-section {
     padding: 10px;
     
@@ -32,4 +32,14 @@
     
      
   }
+} */
+
+.eventdata-container{
+  display: flex;
+  gap:30px;
+  justify-content: start;
+  width: 100%;
+  margin: 35px 0px 30px;
+  overflow-x: scroll;
 }
+

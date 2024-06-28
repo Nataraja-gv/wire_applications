@@ -64,7 +64,6 @@ export default function EventCards({ image, title }) {
             },
             fontSize: {
               xs:"16px",
-
               sm: "22px",
               md: "20px",
               lg: "24px",

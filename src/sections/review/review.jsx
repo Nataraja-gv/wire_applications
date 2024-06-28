@@ -10,7 +10,7 @@ const StyledDiv = styled("div")({
   backgroundImage: `url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
-  height:"600px",
+  height: "600px",
   width: "100%",
   opacity: 0.9,
   display: "flex",
@@ -43,13 +43,18 @@ function Review() {
 
   return (
     <Box
-      width="100%"
       sx={{
         margin: {
           xs: "50px auto 0px",
           sm: "50px auto 0px",
           md: "50px auto 0px",
           lg: "50px auto 20px",
+        },
+        width: {
+          xs: "90%",
+          sm:"90%",
+          md:"100%",
+          lg:"100%"
         },
       }}
     >
