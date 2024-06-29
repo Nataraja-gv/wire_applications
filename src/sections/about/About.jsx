@@ -14,13 +14,26 @@ const About = () => {
         },
       }}
     >
-      <Grid container spacing={4}>
+      <Stack sx={{ marginTop: "10px" }}>
+        <Typography variant="title">About Us</Typography>
+      </Stack>
+      <Grid
+        container
+        spacing={4}
+        sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
+      >
         {/* Left Column - About Text */}
         <Grid item xs={12} md={6} sm={12} lg={7}>
-          <Stack sx={{ marginTop: "10px" }}>
-            <Typography variant="title">About Us</Typography>
-          </Stack>
-          <Box sx={{ marginTop: "5px" }}>
+          <Box
+            sx={{
+              marginTop: {
+                xs: "-40px",
+                sm: "5px",
+                md: "5px",
+                lg: "5px",
+              },
+            }}
+          >
             <Typography variant="h2">
               Welcome to [Vendor Name], your premier destination for
               extraordinary events. With years of experience in the industry, we
@@ -57,10 +70,16 @@ const About = () => {
             sx={{
               width: "100%",
               height: {
-                xs: "180px",
+                xs: "308px",
                 sm: "300px",
                 md: "550px",
                 lg: "auto",
+              },
+              marginTop: {
+                xs: "20px",
+                sm: "0px",
+                md: "0px",
+                lg: "0px",
               },
             }}
             alt="About Image"
