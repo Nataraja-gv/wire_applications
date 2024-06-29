@@ -59,6 +59,7 @@ const Navbar = () => {
           md: "64px",
           lg: "64px",
         },
+        borderBottom:"2px solid #d3d3d3"
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">

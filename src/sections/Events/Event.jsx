@@ -20,7 +20,18 @@ const Event = () => {
         },
       }}
     >
-      <Typography variant="title">Upcoming Events</Typography>
+      <Stack
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginTop: "30px",
+          alignItems: "center",
+        }}
+      >
+        <Typography variant="title">Upcoming Events</Typography>
+        <Typography variant="viewAll">View All (06)</Typography>
+      </Stack>
 
       {/* gris scroll container */}
       <Grid
@@ -53,7 +64,7 @@ const Event = () => {
             key={index}
             sx={{
               minWidth: {
-                xs: "47%",
+                xs: "47.5%",
                 sm: "48%",
                 md: "32%",
                 lg: "32%",

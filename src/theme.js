@@ -36,7 +36,6 @@ export const theme = createTheme({
     navbg: {
       main: "#FFFFFF99",
     },
-    
   },
   breakpoints: {
     values: {
@@ -83,6 +82,28 @@ export const theme = createTheme({
 
       "@media (min-width:961px)and (max-width:1260px)": {
         fontSize: "40px",
+      },
+    },
+
+    viewAll: {
+      fontSize: "18px",
+      fontWeight: "500",
+      background:
+        "linear-gradient(141deg, rgba(131, 56, 236, 1) 0%, rgba(58, 134, 255, 1) 100%)",
+      backgroundClip: "text",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      width: "fit-content",
+      "@media (max-width:600px)": {
+        display: "none",
+        // fontSize: "25px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        display: "none",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "18px",
       },
     },
 
@@ -134,7 +155,6 @@ export const theme = createTheme({
       fontSize: "15px",
       fontWeight: "500",
       color: "black",
-      
     },
 
     menutitle: {
@@ -194,20 +214,17 @@ export const theme = createTheme({
       textAlign: "justify",
     },
 
-    footerAddress:{
-      fontSize:"16px",
-      fontWeight:"400",
-      lineHeight:"25px",
-      textAlign:"center",
-      width:"350px",
-      color:"#0D0D0D" ,
+    footerAddress: {
+      fontSize: "16px",
+      fontWeight: "400",
+      lineHeight: "25px",
+      textAlign: "center",
+      width: "350px",
+      color: "#0D0D0D",
       "@media (max-width:600px)": {
         fontSize: "14px",
-      lineHeight:"18px",
-      width:"80%",
-
-      
-
+        lineHeight: "18px",
+        width: "80%",
       },
       "@media (min-width:601px)and (max-width:960px)": {
         fontSize: "16px",
@@ -216,14 +233,13 @@ export const theme = createTheme({
       "@media (min-width:961px)and (max-width:1260px)": {
         fontSize: "16px",
       },
-
     },
 
     booksubtitle: {
       fontWeight: 600,
       fontSize: "14px",
       color: "black",
-      display:"block",
+      display: "block",
       "@media (max-width:600px)": {
         fontSize: "10px",
       },
@@ -234,7 +250,6 @@ export const theme = createTheme({
       "@media (min-width:961px)and (max-width:1260px)": {
         fontSize: "14px",
       },
-
     },
 
     // h3: {
@@ -425,21 +440,17 @@ export const theme = createTheme({
         }),
       },
     },
-    
 
-     MuiTextField: {
+    MuiTextField: {
       styleOverrides: {
         root: ({ ownerState }) => ({
           ...(ownerState.size === "small" && {
             backgroundcolor: "#FFFFFF",
             height: "25px",
-            borderRadius:"5px",
-
-            
+            borderRadius: "5px",
           }),
         }),
       },
     },
-
   },
 });
