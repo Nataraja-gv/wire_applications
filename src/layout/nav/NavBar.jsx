@@ -54,9 +54,9 @@ const Navbar = () => {
         verticalAlign: "middle",
         margin: "auto",
         height: {
-          xs: "45px",
-          sm: "52px",
-          md: "58px",
+          xs: "64px",
+          sm: "64px",
+          md: "64px",
           lg: "64px",
         },
       }}
