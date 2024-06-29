@@ -6,6 +6,8 @@ import StarHalfIcon from "@mui/icons-material/StarHalf";
 import ReviewCard from "../../components/review-card/ReviewCard"; // Correct import path
 import CarouselReview from "../../components/review-card/CarouselReview";
 import { Stack, Typography } from "@mui/material";
+
+
 const StyledDiv = styled("div")({
   backgroundImage: `url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg')`,
   backgroundSize: "cover",
@@ -52,27 +54,15 @@ function Review() {
         },
         width: {
           xs: "90%",
-          sm:"90%",
-          md:"100%",
-          lg:"100%"
+          sm: "90%",
+          md: "100%",
+          lg: "100%",
         },
       }}
     >
       {matches ? (
         <Box>
-          <Typography
-            variant="title"
-            sx={{
-              fontSize: {
-                xs: "25px",
-                sm: "30px",
-                md: "40px",
-                lg: "40px",
-              },
-            }}
-          >
-            Google Reviews
-          </Typography>
+          <Typography variant="title">Google Reviews</Typography>
 
           <Stack sx={{ marginTop: "20px" }}>
             <CarouselReview />

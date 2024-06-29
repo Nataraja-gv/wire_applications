@@ -3,11 +3,9 @@ import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
 import MenuCard from "../../components/Menu/MenuCard";
 import { Grid, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 const Menu = () => {
   const { MenuData } = useContext(EventContext);
-  const theme = useTheme();
 
   return (
     <Box
@@ -21,18 +19,7 @@ const Menu = () => {
         },
       }}
     >
-      <Typography
-        variant="title"
-        sx={{
-          fontSize: {
-            xs: "25px",
-            sm: "30px",
-            md: "40px",
-            lg: "40px",
-          },
-          marginBottom: "20px",
-        }}
-      >
+      <Typography variant="title" sx={{ marginBottom: "20px" }}>
         Menu
       </Typography>
 
@@ -46,13 +33,6 @@ const Menu = () => {
           flexDirection: "row",
           flexWrap: "nowrap",
           overflowX: "auto",
-          // paddingBottom: "20px",
-          // marginTop: {
-          //   xs: "20px",
-          //   sm: "20px",
-          //   md: "20px",
-          //   lg: "20px",
-          // },
           WebkitOverflowScrolling: "touch",
           scrollbarWidth: "none",
           "&::-webkit-scrollbar": {
@@ -61,18 +41,18 @@ const Menu = () => {
         }}
       >
         {MenuData.map((menu, index) => (
-          <Grid 
-          sx={{
+          <Grid
+            sx={{
               minWidth: {
                 xs: "46.5%",
                 sm: "31.5%",
                 md: "23.4%",
                 lg: "23.8%",
               },
-          }}
-              marginRight= "10px"
-          
-           key={index}>
+            }}
+            marginRight="10px"
+            key={index}
+          >
             <MenuCard
               image={menu.image}
               menuname={menu.menuname}

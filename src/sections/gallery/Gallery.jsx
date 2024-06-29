@@ -1,5 +1,4 @@
 import { Grid, Stack, Typography } from "@mui/material";
-import { theme } from "../../theme";
 import GalleryCard from "../../components/gallery-card/GalleryCard";
 import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
@@ -18,20 +17,7 @@ const Gallery = () => {
         },
       }}
     >
-      <Typography
-        variant="title"
-        sx={{
-          fontSize: {
-            xs: "25px",
-            sm: "30px",
-            md: "40px",
-            lg: "40px",
-          },
-          marginBottom: "30px",
-        }}
-      >
-        Gallery
-      </Typography>
+      <Typography variant="title" marginBottom="30px">Gallery</Typography>
       <Grid container spacing={1.5}>
         {galleryData.map((menu, index) => (
           <Grid item xs={4} sm={4} md={3} key={index}>

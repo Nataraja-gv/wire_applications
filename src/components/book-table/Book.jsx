@@ -104,7 +104,7 @@ const Book = () => {
           />
         </Grid>
         <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary" >
+          <Button size="large" fullWidth variant="contained" color="primary" >
             Send message
           </Button>
         </Grid>

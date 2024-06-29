@@ -7,7 +7,7 @@ import "./Event.module.css";
 
 const Event = () => {
   const { eventData } = useContext(EventContext);
-  console.log(eventData, "bdwhx");
+  // console.log(eventData, "bdwhx");
   return (
     <Stack
       width="90%"
@@ -20,19 +20,7 @@ const Event = () => {
         },
       }}
     >
-      <Typography
-        variant="title"
-        sx={{
-          fontSize: {
-            xs: "25px",
-            sm: "30px",
-            md: "40px",
-            lg: "40px",
-          },
-        }}
-      >
-        Upcoming Events
-      </Typography>
+      <Typography variant="title">Upcoming Events</Typography>
 
       {/* gris scroll container */}
       <Grid
@@ -55,7 +43,7 @@ const Event = () => {
           WebkitOverflowScrolling: "touch",
           scrollbarWidth: "none",
           "&::-webkit-scrollbar": {
-            display: "none", //
+            display: "none",
           },
         }}
       >

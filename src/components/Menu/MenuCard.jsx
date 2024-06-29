@@ -8,10 +8,10 @@ export default function MenuCard({ image, menuname, pages }) {
       sx={{
         border: "2px solid #eeeeee",
         padding: {
-          xs:"8px",
+          xs: "8px",
           sm: "15px",
           md: "15px",
-          lg:"15px"
+          lg: "15px",
         },
         borderRadius: "10px",
       }}
@@ -23,18 +23,7 @@ export default function MenuCard({ image, menuname, pages }) {
         style={{ width: "100%", borderRadius: "5px" }}
       />
 
-      <Typography
-        variant="menutitle"
-        sx={{
-          fontSize: {
-            xs: "14px",
-            md: "16px",
-            sm: "16px",
-          },
-        }}
-      >
-        {menuname}
-      </Typography>
+      <Typography variant="menutitle">{menuname}</Typography>
       <Typography variant="body2">{pages} Pages</Typography>
     </Box>
   );

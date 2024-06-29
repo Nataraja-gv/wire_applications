@@ -36,6 +36,7 @@ export const theme = createTheme({
     navbg: {
       main: "#FFFFFF99",
     },
+    
   },
   breakpoints: {
     values: {
@@ -72,21 +73,23 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       fontSize: "40px",
-
       fontWeight: "bold",
-
       "@media (max-width:600px)": {
-        fontSize: "100px",
+        fontSize: "25px",
       },
-      "@media (max-width:960px)": {
+      "@media (min-width:601px)and (max-width:960px)": {
         fontSize: "30px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "40px",
       },
     },
 
     h2: {
       fontWeight: 500,
-      fontSize: "32px",
-      lineHeight: "0px",
+      fontSize: "16px",
+      lineHeight: "28px",
       background: "#000000",
       backgroundClip: "text",
       WebkitBackgroundClip: "text",
@@ -94,21 +97,20 @@ export const theme = createTheme({
       textAlign: "justify",
       wordSpacing: "0px",
       margin: "20px 0px 0px",
-      // "@media (max-width:1200px)": {
-      //   fontSize: "5.5rem",
-      // },
-      // "@media (max-width:960px)": {
-      //   fontSize: "2.0rem",
-      // },
-      // "@media (max-width:600px)": {
-      //   fontSize: "5.5rem",
-      // },
-      // "@media (max-width:960px)": {
-      //   fontSize: "2.0rem",
-      // },
+      "@media (max-width:600px)": {
+        fontSize: "14px",
+        lineHeight: "20px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "16px",
+        lineHeight: "20px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "16px",
+        lineHeight: "24px",
+      },
     },
-
-
 
     h1: {
       fontSize: "50px",
@@ -128,8 +130,6 @@ export const theme = createTheme({
       },
     },
 
-
-
     labeltext: {
       fontSize: "15px",
       fontWeight: "500",
@@ -142,6 +142,16 @@ export const theme = createTheme({
       textWrap: "nowrap",
       fontWeight: "bold",
       fontSize: "18px",
+      "@media (max-width:600px)": {
+        fontSize: "14px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "16px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "16px",
+      },
     },
     body2: {
       fontWeight: 500,
@@ -171,6 +181,41 @@ export const theme = createTheme({
       overflow: "hidden",
       textAlign: "justify",
       wordSpacing: "0px",
+    },
+    reviewDescription: {
+      fontSize: "16px",
+      color: "black",
+      fontFamily: "Work Sans, sans-serif",
+      display: "-webkit-box",
+      WebkitLineClamp: 3,
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+      textAlign: "justify",
+    },
+
+    footerAddress:{
+      fontSize:"16px",
+      fontWeight:"400",
+      lineHeight:"25px",
+      textAlign:"center",
+      width:"350px",
+      color:"#0D0D0D" ,
+      "@media (max-width:600px)": {
+        fontSize: "14px",
+      lineHeight:"18px",
+      width:"80%",
+
+      
+
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "16px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "16px",
+      },
+
     },
 
     // subtitle: {
@@ -221,6 +266,16 @@ export const theme = createTheme({
       width: "fit-content",
       display: "block",
       // backgroundColor:"green"
+      "@media (max-width:600px)": {
+        fontSize: "16px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "20px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "20px",
+      },
     },
 
     eventtime: {
@@ -233,6 +288,16 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       display: "block",
+      "@media (max-width:600px)": {
+        fontSize: "12px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "16px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "14px",
+      },
     },
 
     onWardsTitle: {
@@ -246,6 +311,19 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       display: "block",
+      "@media (max-width:600px)": {
+        fontSize: "16px",
+        marginTop: "5px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "22px",
+        marginTop: "5px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "20px",
+        marginTop: "5px",
+      },
     },
   },
 
@@ -253,8 +331,8 @@ export const theme = createTheme({
     width: "100%",
   },
 
-  components:{
-    fontFamily:"Work Sans, sans-serif",
+  components: {
+    fontFamily: "Work Sans, sans-serif",
     MuiButton: {
       styleOverrides: {
         root: ({ ownerState }) => ({
@@ -282,34 +360,31 @@ export const theme = createTheme({
             fontWeight: "600",
             alignContent: "center",
             textTransform: "capitalize",
-            width:"250px",  
-            height:"60px",
+            width: "250px",
+            height: "60px",
             gap: "8px",
             border: "1px solid",
             opacity: 1,
-            padding:"20px 40px",
+            padding: "20px 40px",
 
             "@media (max-width:600px)": {
-              fontSize:"14px",
-              width:"150px",
-              height:"40px",
-              padding:"0px 0px"
+              fontSize: "14px",
+              width: "150px",
+              height: "40px",
+              padding: "0px 0px",
             },
             "@media (min-width:601px) and  (max-width:960px)": {
-              fontSize:"20px",
-              width:"200px",
-              height:"50px",
-              padding:"10px 20px",
-
+              fontSize: "20px",
+              width: "200px",
+              height: "50px",
+              padding: "10px 20px",
             },
 
             "@media (min-width:961px) and  (max-width:1260px)": {
-              fontSize:"20px",
-              width:"250px",
-              height:"60px",
-              md:"15px 30px",
-              
-               
+              fontSize: "20px",
+              width: "250px",
+              height: "60px",
+              md: "15px 30px",
             },
           }),
           ...(ownerState.size === "small" && {
@@ -336,6 +411,5 @@ export const theme = createTheme({
         }),
       },
     },
-
-  }
+  },
 });
