@@ -134,6 +134,7 @@ export const theme = createTheme({
       fontSize: "15px",
       fontWeight: "500",
       color: "black",
+      
     },
 
     menutitle: {
@@ -218,10 +219,23 @@ export const theme = createTheme({
 
     },
 
-    // subtitle: {
-    //   fontWeight: 600,
-    //   fontSize: "1.25rem",
-    // },
+    booksubtitle: {
+      fontWeight: 600,
+      fontSize: "14px",
+      color: "black",
+      display:"block",
+      "@media (max-width:600px)": {
+        fontSize: "10px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "14px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "14px",
+      },
+
+    },
 
     // h3: {
     //   fontWeight: 600,
@@ -411,5 +425,21 @@ export const theme = createTheme({
         }),
       },
     },
+    
+
+     MuiTextField: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.size === "small" && {
+            backgroundcolor: "#FFFFFF",
+            height: "25px",
+            borderRadius:"5px",
+
+            
+          }),
+        }),
+      },
+    },
+
   },
 });

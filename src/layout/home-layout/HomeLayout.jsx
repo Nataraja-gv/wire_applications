@@ -7,7 +7,7 @@ const HomeLayout = () => {
   return (
     <Box sx={{ position: "relative" }}>
       {/* Sticky NavBar */}
-      <Box sx={{ position: "fixed", top: "30px", zIndex: 10, width: "100%" }}>
+      <Box sx={{ position: "fixed", top: "0px", zIndex: 10, width: "100%" }}>
         <NavBar />
       </Box>
 

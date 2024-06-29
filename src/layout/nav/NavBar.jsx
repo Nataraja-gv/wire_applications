@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Box,
   IconButton,
@@ -12,7 +13,6 @@ import { Link } from "react-scroll";
 import toco_logo from "../../assets/images/toca (2).png";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
 const navItems = [
@@ -22,7 +22,6 @@ const navItems = [
   { name: "Menu", path: "menu" },
   { name: "Gallery", path: "gallery" },
   { name: "Reviews", path: "review" },
-  
 ];
 
 const Navbar = () => {
@@ -40,30 +39,26 @@ const Navbar = () => {
   return (
     <Box
       sx={{
-        width: "92%",
+        width: "100%",
         padding: {
           xs: "6px 20px",
           sm: "6px 51px",
           md: "6px 51px",
           lg: "6px 51px",
         },
-        gap: "0px",
-        borderRadius: "128px ",
-        border: "1px solid gray",
-        // backgroundColor: "#FFFFFF99",
-        backgroundColor: "white",
-        opacity: 1,
+        backgroundColor: " #FFFFFF99",  
+        backdropFilter: "blur(5px)",  
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         verticalAlign: "middle",
         margin: "auto",
-        height:{
-          xs:"45px",
-          sm:"52px",
-          md:"58px",
-          lg:"64px"
-        }
+        height: {
+          xs: "45px",
+          sm: "52px",
+          md: "58px",
+          lg: "64px",
+        },
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
@@ -81,13 +76,9 @@ const Navbar = () => {
         />
       </Link>
       {matches ? (
-        //mobile view
+        // Mobile view
         <>
-          <IconButton
-            color="primary"
-            onClick={handleDrawerOpen}
-            sx={{ ml: "auto" }}
-          >
+          <IconButton color="primary" onClick={handleDrawerOpen} sx={{ ml: "auto" }}>
             <MenuIcon size="large" />
           </IconButton>
           <Drawer
@@ -95,12 +86,15 @@ const Navbar = () => {
             open={openDrawer}
             onClose={handleDrawerClose}
             ModalProps={{ disableBackdropClick: true }}
+            sx={{
+              backdropFilter: "blur(10px)",
+              backgroundColor: "#FFFFFF99",
+            }}
           >
             <Box
               sx={{
                 width: "50vw",
                 maxWidth: 300,
-                backgroundColor: "#FFFFFF99",
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -108,19 +102,12 @@ const Navbar = () => {
                 padding: "20px",
               }}
             >
-              <IconButton
-                onClick={handleDrawerClose}
-                sx={{ alignSelf: "flex-end" }}
-              >
+              <IconButton onClick={handleDrawerClose} sx={{ alignSelf: "flex-end" }}>
                 <CloseIcon />
               </IconButton>
               <List>
                 {navItems.map((item, index) => (
-                  <ListItem
-                    key={index}
-                    onClick={handleDrawerClose}
-                    disableGutters
-                  >
+                  <ListItem key={index} onClick={handleDrawerClose} disableGutters>
                     <Link
                       to={item.path}
                       smooth
@@ -139,7 +126,7 @@ const Navbar = () => {
           </Drawer>
         </>
       ) : (
-        //desktop view
+        // Desktop view
         <Stack direction="row" spacing={4}>
           {navItems.map((item, index) => (
             <Link
