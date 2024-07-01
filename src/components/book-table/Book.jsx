@@ -34,7 +34,13 @@ const Book = () => {
 
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Typography variant="labeltext">Last name</Typography>
-          <TextField fullWidth size="small" id="lastname" variant="outlined" />
+          <TextField
+            fullWidth
+            size="small"
+            sx={{ backgroundColor: "white", borderRadius: "5px" }}
+            id="lastname"
+            variant="outlined"
+          />
         </Grid>
         <Grid item xs={12}>
           <Typography variant="labeltext">Phone number</Typography>
