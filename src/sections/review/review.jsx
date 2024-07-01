@@ -7,7 +7,6 @@ import ReviewCard from "../../components/review-card/ReviewCard"; // Correct imp
 import CarouselReview from "../../components/review-card/CarouselReview";
 import { Stack, Typography } from "@mui/material";
 
-
 const StyledDiv = styled("div")({
   backgroundImage: `url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg')`,
   backgroundSize: "cover",
@@ -93,6 +92,76 @@ function Review() {
           </Box>
           <Box>
             <ReviewCard />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "30px",
+            }}
+          >
+            <Stack
+              sx={{
+                border: "1px solid",
+                borderColor: "primary.main",
+                padding: "8px 18px 8px 18px",
+                borderRadius: "5px",
+                backgroundColor: "primary.main",
+                "&:hover": {
+                  borderColor: "black",
+                },
+                fontSize: {
+                  xs: "",
+                  sm: "",
+                  md: "",
+                  lg: "",
+                },
+              }}
+            >
+              <Typography
+                sx={{
+                  fontWeight:"500",
+                  color:"white",
+                  fontSize: {
+                    xs: "16px",
+                    sm: "16px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
+               
+                Write a Review
+              </Typography>
+            </Stack>
+            <Stack
+              sx={{
+                border: "1px solid",
+                padding: "8px 18px 8px 18px",
+                borderRadius: "5px",
+                backgroundColor: " rgba(255, 255, 255, 0.4)",
+                "&:hover": {
+                  borderColor: "primary.main",
+                },
+              }}
+            >
+              <Typography
+                sx={{
+                  fontWeight:"500",
+                  color:"white",
+                  fontSize: {
+                    xs: "16px",
+                    sm: "16px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
+               
+                View all Reviews
+              </Typography>
+            </Stack>
           </Box>
         </StyledDiv>
       )}

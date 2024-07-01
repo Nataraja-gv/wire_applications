@@ -46,8 +46,10 @@ const Navbar = () => {
           md: "6px 51px",
           lg: "6px 51px",
         },
-        backgroundColor: " #FFFFFF99",  
-        backdropFilter: "blur(5px)",  
+        // backgroundColor: " #FFFFFF99",
+        backgroundColor:"transparent",  
+
+        backdropFilter: "blur(10px)",  
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

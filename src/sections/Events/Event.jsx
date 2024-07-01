@@ -7,7 +7,7 @@ import "./Event.module.css";
 
 const Event = () => {
   const { eventData } = useContext(EventContext);
-  // console.log(eventData, "bdwhx");
+
   return (
     <Stack
       width="90%"
@@ -25,11 +25,18 @@ const Event = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          marginTop: "30px",
+         
           alignItems: "center",
         }}
       >
-        <Typography variant="title">Upcoming Events</Typography>
+        <Typography variant="title" sx={{
+          marginTop:{
+            xs:"30px",
+            sm:"0px",
+            md:"0px",
+            lg:"0px"
+          }
+        }}>Upcoming Events</Typography>
         <Typography variant="viewAll">View All (06)</Typography>
       </Stack>
 

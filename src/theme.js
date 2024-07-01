@@ -50,10 +50,12 @@ export const theme = createTheme({
     fontFamily: "Work Sans, sans-serif",
 
     navtitle: {
-      fontSize: "18px",
+      fontSize: "17px",
       fontWeight: 400,
       lineHeight: "51px",
-      backgroundColor: "#000000",
+      background: " rgba(255, 255, 255, 1)",
+      // background: "black",
+
       color: "transparent",
       backgroundClip: "text",
       transition: "color 0.3s ease-in-out",
@@ -252,10 +254,20 @@ export const theme = createTheme({
       },
     },
 
-    // h3: {
-    //   fontWeight: 600,
-    //   fontSize: "24px",
-    // },
+    moreImage: {
+       fontSize:"20px",
+       fontWeight:"500",
+       "@media (max-width:600px)": {
+        fontSize: "10px",
+      },
+      "@media (min-width:601px)and (max-width:960px)": {
+        fontSize: "14px",
+      },
+
+      "@media (min-width:961px)and (max-width:1260px)": {
+        fontSize: "14px",
+      },
+    },
 
     // h4: {
     //   fontWeight: 600,
@@ -366,7 +378,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: ({ ownerState }) => ({
           ...(ownerState.size === "large" && {
-            padding: "10px 16px 10px 16px",
+            padding: "6px 10px 6px 10px",
             gap: "4px",
             height: "44px",
             fontSize: "1rem",
@@ -389,12 +401,12 @@ export const theme = createTheme({
             fontWeight: "600",
             alignContent: "center",
             textTransform: "capitalize",
-            width: "250px",
-            height: "60px",
+            // width: "230px",
+            // height: "55px",
             gap: "8px",
             border: "1px solid",
             opacity: 1,
-            padding: "20px 40px",
+            padding: "13px 35px",
 
             "@media (max-width:600px)": {
               fontSize: "14px",
@@ -441,16 +453,16 @@ export const theme = createTheme({
       },
     },
 
-    MuiTextField: {
-      styleOverrides: {
-        root: ({ ownerState }) => ({
-          ...(ownerState.size === "small" && {
-            backgroundcolor: "#FFFFFF",
-            height: "25px",
-            borderRadius: "5px",
-          }),
-        }),
-      },
-    },
+    // MuiTextField: {
+    //   styleOverrides: {
+    //     root: ({ ownerState }) => ({
+    //       ...(ownerState.size === "small" && {
+    //         backgroundcolor: "#FFFFFF",
+    //         height: "25px",
+    //         borderRadius: "5px",
+    //       }),
+    //     }),
+    //   },
+    // },
   },
 });

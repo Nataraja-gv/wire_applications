@@ -10,7 +10,7 @@ const About = () => {
           xs: "10px auto 0px",
           sm: "10px auto 0px",
           md: "50px auto 0px",
-          lg: "50px auto 20px",
+          lg: "50px auto 0px",
         },
       }}
     >
@@ -71,9 +71,9 @@ const About = () => {
               width: "100%",
               height: {
                 xs: "308px",
-                sm: "300px",
-                md: "550px",
-                lg: "auto",
+                sm: "400px",
+                md: "500px",
+                lg: "400px",
               },
               marginTop: {
                 xs: "20px",

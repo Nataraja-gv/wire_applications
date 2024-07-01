@@ -13,34 +13,45 @@ import img8 from "../../assets/gallery/img8.jpg"
  
  export const galleryData = [
     {
+      id:1,
       img: img1,
       title: 'Breakfast',
     },
     {
+      id:2,
+
       img: img2,
       title: 'Burger',
     },
     {
+      id:3,
+
       img: img3,
       title: 'Camera',
     },
     {
+      id:4,
+
       img: img4,
       title: 'Coffee',
     },
     {
+      id:5,
       img: img5,
       title: 'Hats',
     },
     {
+      id:6,
       img: img6,
       title: 'Honey',
     },
     {
+      id:7,
       img: img7,
       title: 'Basketball',
     },
     {
+      id:8,
       img: img8,
       title: 'Fern',
     },
