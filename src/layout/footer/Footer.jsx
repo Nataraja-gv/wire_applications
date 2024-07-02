@@ -19,12 +19,18 @@ const Footer = () => {
       sx={{
         width: "100%",
         backgroundColor: {
-          xs: "#f1edf9",
+          xs: "white",
           md: "white",
           sm: "white",
           lg: "white",
         },
-        marginTop: "50px",
+        marginTop:{
+          xs:"0px",
+          sm:"50px",
+          md:"50px",
+          lg:"50px"
+
+        },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

@@ -6,13 +6,15 @@ import StarHalfIcon from "@mui/icons-material/StarHalf";
 // import ReviewCard from "../../components/review-card/ReviewCard"; // Correct import path
 import CarouselReview from "../../components/review-card/CarouselReview";
 
-import { Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
+import { useContext } from "react";
+import { EventContext } from "../../context/tickets-context/context";
 
 const StyledDiv = styled("div")({
   backgroundImage: `url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
-  height: "600px",
+  height: "auto",
   width: "100%",
   opacity: 0.9,
   display: "flex",
@@ -20,9 +22,12 @@ const StyledDiv = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   color: "goldenrod",
+  padding:"30px"
 });
 
 function Review() {
+  const { reviews } = useContext(EventContext);
+
   const rating = 4.8;
 
   const fullStars = Math.floor(rating);
@@ -69,7 +74,12 @@ function Review() {
               md: "100px",
               lg: "110px",
             },
-            marginBottom: "5px",
+           margin: {
+            xs:"10px auto",
+            sm:"10px auto",
+            md:"20px auto",
+            lg:"20px auto"
+           }
           }}
         />
 
@@ -88,6 +98,7 @@ function Review() {
               alignItems: "center",
             },
             fontWeight: "bold",
+             
           }}
         >
           <span style={{ marginRight: "5px", fontWeight: "bold" }}>
@@ -97,15 +108,70 @@ function Review() {
             <span key={index}>{star}</span>
           ))}
         </Box>
-        <Box>
-          <CarouselReview />
-        </Box>
+
+        <Grid
+          container
+          width="90%"
+          
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "nowrap",
+            overflowX: "auto",
+
+            WebkitOverflowScrolling: "touch",
+            scrollbarWidth: "none",
+            "&::-webkit-scrollbar": {
+              display: "none",
+            },
+            margin: {
+            xs:"20px auto",
+            sm: "30px auto",
+            md: "40px auto",
+            lg:"50px auto"
+           }
+          }}
+        >
+          {reviews.map((item, index) => {
+            return (
+              <Grid
+                item
+                key={index}
+                sx={{
+                  minWidth: {
+                    xs: "90%",
+                    sm: "32%",
+                    md: "32%",
+                    lg: "23%",
+                  },
+                  
+                  
+                  borderRadius: "10px",
+                  marginRight: "10px",
+                  backgroundColor: "white",
+                }}
+              >
+                <CarouselReview
+                  key={index}
+                  name={item.name}
+                  rating={item.rating}
+                  review={item.review}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "30px",
+            gap:{
+              xs:"10px",
+              sm:"20px",
+              md:"30px",
+              lg:"30px"
+            },
           }}
         >
           <Stack

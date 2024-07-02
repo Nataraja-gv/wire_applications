@@ -7,11 +7,11 @@ import {
 import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
 import { Box, Rating, Stack, Typography } from "@mui/material";
-const { reviews } = useContext(EventContext);
+ 
 
 const ReviewCard = () => {
    
-
+  const { reviews } = useContext(EventContext);
 
   const responsive = {
     desktop: {

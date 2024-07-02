@@ -19,15 +19,15 @@
         rating: 4.2,
         review: 'Fusce tincidunt ipsum nec nisi sagittis, id tempor turpis fringilla.'
     },
-    // {
-    //     name: 'Michael Johnson',
-    //     rating: 5.0,
-    //     review: 'Nullam hendrerit varius purus non condimentum. Nam in consequat lacus.'
-    // },
-    // {
-    //     name: 'Michael Johnson',
-    //     rating: 5.0,
-    //     review: 'Nullam hendrerit varius purus non condimentum. Nam in consequat lacus.'
-    // },
+    
+    {
+        name: 'Michael Johnson',
+        rating: 5.0,
+        review: 'Nullam hendrerit varius purus non condimentum. Nam in consequat lacus.'
+    },{
+        name: 'Michael Johnson',
+        rating: 5.0,
+        review: 'Nullam hendrerit varius purus non condimentum. Nam in consequat lacus.'
+    },
 
 ]
