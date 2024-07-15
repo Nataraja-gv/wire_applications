@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import { createContext } from "react";
-import { eventData } from "../data/EventData";
-import { MenuData } from "../../data/menu-data/MenuData"
-import {galleryData} from "../../data/gallery/GalleryData"
-import {reviews} from "../../data/reviewData/ReviewData"
+import { eventData } from "../../data/EventData/EventData";
+import { MenuData } from "../../data/menu-data/MenuData";
+import { galleryData } from "../../data/gallery/GalleryData";
+import { reviews } from "../../data/reviewData/ReviewData";
 
 export const EventContext = createContext();
 const ContextProvider = ({ children }) => {
-  const EventValues = { eventData, MenuData ,galleryData,reviews};
+  const EventValues = { eventData, MenuData, galleryData, reviews};
   // console.log("eventValues", EventValues)
   return (
     <EventContext.Provider value={EventValues}>

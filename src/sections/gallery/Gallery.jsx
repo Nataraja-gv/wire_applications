@@ -3,6 +3,7 @@ import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import GalleryCard from "../../components/gallery-card/GalleryCard";
 import { EventContext } from "../../context/tickets-context/context";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const { galleryData } = useContext(EventContext);
@@ -23,7 +24,7 @@ const Gallery = () => {
         Gallery
       </Typography>
       <Grid container spacing={1.5}>
-        {galleryData.map((menu, index) => (
+        {galleryData.slice(0, 8).map((menu, index) => (
           <Grid
             item
             xs={6}
@@ -58,18 +59,19 @@ const Gallery = () => {
                   backdropFilter: "blur(4px)",
                   transition: "box-shadow 0.3s ease",
                   cursor: "pointer",
-                 "&:hover": {
-                    borderColor: "primary.main",  
-                    
+                  "&:hover": {
+                    borderColor: "primary.main",
                   },
                 }}
               >
-                <Stack direction="row" alignItems="center" spacing={0.2}>
-                  <InsertPhotoIcon fontSize="medium" color="primary" />
-                  <Typography variant="body1" color="primary">
-                    More Images
-                  </Typography>
-                </Stack>
+                <Link to="/gallery">
+                  <Stack direction="row" alignItems="center" spacing={0.2}>
+                    <InsertPhotoIcon fontSize="medium" color="primary" />
+                    <Typography variant="body1" color="primary">
+                      More Images
+                    </Typography>
+                  </Stack>
+                </Link>
               </Box>
             )}
           </Grid>

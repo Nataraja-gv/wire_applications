@@ -4,6 +4,7 @@ import EventCards from "../../components/event-card/EventCard";
 import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
 import "./Event.module.css";
+import { Link } from "react-router-dom";
 
 const Event = () => {
   const { eventData } = useContext(EventContext);
@@ -28,15 +29,23 @@ const Event = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="title" sx={{
-          marginTop:{
-            xs:"30px",
-            sm:"0px",
-            md:"0px",
-            lg:"0px"
-          }
-        }}>Upcoming Events</Typography>
-        <Typography variant="viewAll">View All (06)</Typography>
+        <Typography
+          variant="title"
+          sx={{
+            marginTop: {
+              xs: "30px",
+              sm: "0px",
+              md: "0px",
+              lg: "0px",
+            },
+          }}
+        >
+          Upcoming Events
+        </Typography>
+        <Link to="/events">
+          {" "}
+          <Typography variant="viewAll">View All (06)</Typography>
+        </Link>
       </Stack>
 
       {/* gris scroll container */}
@@ -70,10 +79,10 @@ const Event = () => {
             key={index}
             sx={{
               minWidth: {
-                xs: "47.5%",
-                sm: "48%",
-                md: "32%",
-                lg: "32%",
+                xs: "47.6%",
+                sm: "48.6%",
+                md: "32.3%",
+                lg: "32.6%",
               },
               border: "2px solid #eeeeee",
               padding: {

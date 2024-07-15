@@ -15,76 +15,90 @@ const Footer = () => {
   ];
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        backgroundColor: {
-          xs: "white",
-          md: "white",
-          sm: "white",
-          lg: "white",
-        },
-        marginTop:{
-          xs:"0px",
-          sm:"50px",
-          md:"50px",
-          lg:"50px"
-
-        },
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "20px",
+    <div
+      style={{
+        width: "90%",
+        margin: "auto",
       }}
     >
-      <Stack direction="column" alignItems="center" spacing={2}>
-        <img src={toco_logo} alt="TOCO Logo" style={{ maxWidth: "2.5rem" }} />
-        <Typography variant="footerAddress">
-          122/A, 105, KHB Colony, 5th Block, 1st A Cross Road, Koramangala,
-          Bangalore 577001
-        </Typography>
-        <Typography variant="footerAddress">+91 +919538500032</Typography>
-        <Typography variant="footerAddress">
-          toca-koramangala@gmail.com
-        </Typography>
-      </Stack>
-      <Stack direction="row" spacing={2}>
-        {FooterItems.map((item, index) => (
-          <NavLink to={item.path} key={index}>
-            <Typography
-              variant="footerAddress"
-              
-              sx={{
-                "&:hover": {
-                  scale: "1.2",
-                },
-                marginTop:{
-                    xs:"50px"
-                }
-              }}
-            >
-              {item.name}
-            </Typography>
-          </NavLink>
-        ))}
-      </Stack>
-      <Stack
-        direction="row"
-        spacing={2}
+      <Box
         sx={{
-          padding: "10px",
-          borderRadius: "5px",
+          display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          padding: "20px",
+          backgroundColor: "#ede7f6",
+          borderRadius: "30px",
         }}
       >
-        <FacebookIcon color="primary" sx={{ fontSize: "small" }} />
-        <XIcon color="primary" sx={{ fontSize: "small" }} />
-        <InstagramIcon color="primary" sx={{ fontSize: "small" }} />
-        <LinkedInIcon color="primary" sx={{ fontSize: "small" }} />
-      </Stack>
-    </Box>
+        <Stack direction="column" alignItems="center" spacing={2}>
+          <img src={toco_logo} alt="TOCO Logo" style={{ maxWidth: "4rem" }} />
+
+          <Typography variant="footerAddress" sx={{ marginTop: "1rem" }}>
+            122/A, 105, KHB Colony, 5th Block, 1st A Cross Road, Koramangala,
+            Bangalore 577001
+          </Typography>
+          <Typography variant="footerAddress" sx={{ marginTop: "1rem" }}>
+            +91 +919538500032
+          </Typography>
+          <Typography variant="footerAddress" sx={{ marginTop: "1rem" }}>
+            toca-koramangala@gmail.com
+          </Typography>
+        </Stack>
+
+        <Stack direction="row" spacing={2} sx={{ marginTop: "0.5rem" }}>
+          {FooterItems.map((item, index) => (
+            <NavLink to={item.path} key={index}>
+              <Typography
+                variant="footerAddress"
+                sx={{
+                  "&:hover": {
+                    scale: "1.2",
+                  },
+                  marginTop: "1rem", 
+                }}
+              >
+                {item.name}
+              </Typography>
+            </NavLink>
+          ))}
+        </Stack>
+
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            padding: "10px",
+            borderRadius: "5px",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: "1rem",  
+          }}
+        >
+          <FacebookIcon color="primary" sx={{ fontSize: 25 }} />
+          <XIcon color="primary" sx={{ fontSize: 25 }} />
+          <InstagramIcon color="primary" sx={{ fontSize: 25 }} />
+          <LinkedInIcon color="primary" sx={{ fontSize: 25 }} />
+        </Stack>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          mt: "20px",
+          mb: "30px",
+        }}
+      >
+        <Typography variant="copytitle">
+          ©️ Copyright 2024 TicketsQue. All Rights Reserved
+        </Typography>
+        <Typography variant="copytitle">
+          <span style={{ fontWeight: "400" }}>Powered by</span> TicketsQue{" "}
+        </Typography>
+      </Box>
+    </div>
   );
 };
 

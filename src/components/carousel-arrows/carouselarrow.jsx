@@ -1,40 +1,36 @@
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+ /* eslint-disable react/prop-types */
+import { BiLeftArrowAlt } from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
 import "./carouselarrow.css";
 
 export const CustomLeftArrow = ({ onClick }) => (
   <div
-    className="custom-arrow left hover:bg-neutral-200"
+    className="custom-arrow left"
     onClick={onClick}
     style={{
       position: "absolute",
-      left: "5px",
-      top: "50%",
+      left: "60px",
+      top: "45%",
       transform: "translateY(-50%)",
-      //   zIndex: 100,
-      cursor: "pointer",
-      //   backgroundColor:"white"
       zIndex: 1,
     }}
   >
-    <KeyboardArrowLeftIcon className="custom-arrow hover:bg-neutral-200" />
+    <BiLeftArrowAlt />
   </div>
 );
 
 export const CustomRightArrow = ({ onClick }) => (
   <div
-    className="custom-arrow right hover:bg-neutral-200"
+    className="custom-arrow right"
     onClick={onClick}
     style={{
       position: "absolute",
-      right: "5px",
-      top: "50%",
+      right: "60px",
+      top: "45%",
       transform: "translateY(-50%)",
       zIndex: 1,
-      cursor: "pointer",
-      //   backgroundColor:"white"
     }}
   >
-    <KeyboardArrowRightIcon className="custom-arrow hover:bg-neutral-200" />
+    <BiRightArrowAlt />
   </div>
 );

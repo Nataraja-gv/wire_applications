@@ -1,0 +1,14 @@
+.sideDiv{
+  width:35px;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top:0px;
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .sideDiv {
+    width:8px;
+  }
+}

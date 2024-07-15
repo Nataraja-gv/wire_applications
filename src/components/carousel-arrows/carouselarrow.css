@@ -1,9 +1,27 @@
 .custom-arrow {
-    font-size: 25px;
-    background-color: rgb(177, 155, 250);
-    z-index: 1;
-    border: none;
-    outline: none;
-    padding: 0 2px;
-    border-radius: 50%;
-  }
+  font-size: 30px;
+  background-color: rgb(177, 155, 250);
+  z-index: 1;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 5px;
+}
+
+.custom-arrow:hover {
+  background-color: #e5e7eb;  
+  transform: scale(1.1); /* Adds a slight zoom effect on hover */
+}
+
+.custom-arrow svg {
+  transition: transform 0.3s;
+}
+
+.custom-arrow:hover svg {
+  transform: rotate(360deg); /* Rotate the arrow 360 degrees on hover */
+}

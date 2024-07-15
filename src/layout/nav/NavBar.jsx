@@ -40,28 +40,18 @@ const Navbar = () => {
     <Box
       sx={{
         width: "100%",
-        padding: {
-          xs: "6px 20px",
-          sm: "6px 51px",
-          md: "6px 51px",
-          lg: "6px 51px",
-        },
-        // backgroundColor: " #FFFFFF99",
-        backgroundColor:"transparent",  
-
-        backdropFilter: "blur(10px)",  
+        backgroundColor: "rgba(255, 255, 255, 0.8)",
+        backdropFilter: "blur(10px)",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        verticalAlign: "middle",
-        margin: "auto",
-        height: {
-          xs: "64px",
-          sm: "64px",
-          md: "64px",
-          lg: "64px",
-        },
-        borderBottom:"2px solid #d3d3d3"
+        height: "64px",
+        borderBottom: "2px solid #d3d3d3",
+        position: "fixed",
+        top: 0,
+        zIndex: 10,
+        padding: "6px 20px",
+        
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
@@ -81,23 +71,28 @@ const Navbar = () => {
       {matches ? (
         // Mobile view
         <>
-          <IconButton color="primary" onClick={handleDrawerOpen} sx={{ ml: "auto" }}>
+          <IconButton
+            color="primary"
+            onClick={handleDrawerOpen}
+            sx={{ ml: "auto" }}
+          >
             <MenuIcon size="large" />
           </IconButton>
           <Drawer
             anchor="right"
             open={openDrawer}
             onClose={handleDrawerClose}
-            ModalProps={{ disableBackdropClick: true }}
             sx={{
-              backdropFilter: "blur(10px)",
-              backgroundColor: "#FFFFFF99",
+              "& .MuiDrawer-paper": {
+                backdropFilter: "blur(10px)",
+                backgroundColor: "rgba(255, 255, 255, 0.8)",
+                width: "50vw",
+                maxWidth: 300,
+              },
             }}
           >
             <Box
               sx={{
-                width: "50vw",
-                maxWidth: 300,
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -105,12 +100,19 @@ const Navbar = () => {
                 padding: "20px",
               }}
             >
-              <IconButton onClick={handleDrawerClose} sx={{ alignSelf: "flex-end" }}>
+              <IconButton
+                onClick={handleDrawerClose}
+                sx={{ alignSelf: "flex-end" }}
+              >
                 <CloseIcon />
               </IconButton>
               <List>
                 {navItems.map((item, index) => (
-                  <ListItem key={index} onClick={handleDrawerClose} disableGutters>
+                  <ListItem
+                    key={index}
+                    onClick={handleDrawerClose}
+                    disableGutters
+                  >
                     <Link
                       to={item.path}
                       smooth
@@ -118,7 +120,7 @@ const Navbar = () => {
                       spy={true}
                       exact="true"
                       offset={-100}
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <ListItemText primary={item.name} />
                     </Link>
@@ -139,7 +141,8 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-150}
+              offset={-65}
+              style={{ textDecoration: "none", color: "inherit" }}
             >
               <Typography variant="navtitle">{item.name}</Typography>
             </Link>

@@ -1,11 +1,28 @@
 import Box from "@mui/material/Box";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { EventContext } from "../../context/tickets-context/context";
 import MenuCard from "../../components/Menu/MenuCard";
 import { Grid, Typography } from "@mui/material";
+import $ from "jquery";
+import "magnific-popup/dist/magnific-popup.css";
 
 const Menu = () => {
   const { MenuData } = useContext(EventContext);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Dynamically import magnificPopup
+      import("magnific-popup").then(() => {
+        // Initialize magnific popup
+        $(".image-popup").magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    }
+  }, []);
 
   return (
     <Box
@@ -19,9 +36,17 @@ const Menu = () => {
         },
       }}
     >
-      <Typography variant="title" sx={{ marginBottom: "20px" }}>
-        Menu
-      </Typography>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography variant="title" sx={{ marginBottom: "20px" }}>
+          Menu
+        </Typography>
+      </div>
 
       <Grid
         container
@@ -47,17 +72,25 @@ const Menu = () => {
                 xs: "46.5%",
                 sm: "31.5%",
                 md: "23.4%",
-                lg: "23.8%",
+                lg: "24.3%",
               },
             }}
             marginRight="10px"
             key={index}
           >
-            <MenuCard
-              image={menu.image}
-              menuname={menu.menuname}
-              pages={menu.pages}
-            />
+            <a
+              href={menu?.image}
+              className="image-popup"
+              key={index}
+              width="50px"
+              height="50px"
+            >
+              <MenuCard
+                image={menu.image}
+                menuname={menu.menuname}
+                pages={menu.pages}
+              />
+            </a>
           </Grid>
         ))}
       </Grid>

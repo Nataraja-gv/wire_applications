@@ -50,10 +50,10 @@ export const theme = createTheme({
     fontFamily: "Work Sans, sans-serif",
 
     navtitle: {
-      fontSize: "17px",
-      fontWeight: 400,
-      lineHeight: "51px",
-      background: " rgba(255, 255, 255, 1)",
+      fontSize: "14px",
+      fontWeight: 500,
+      lineHeight: "45px",
+      background: "black",
       // background: "black",
 
       color: "transparent",
@@ -65,6 +65,15 @@ export const theme = createTheme({
       cursor: "pointer",
     },
 
+    copytitle: {
+      fontFamily: " Work Sans",
+      fontSize: "12px",
+      fontWeight: " 700",
+      lineHeight: "25.6px",
+      textAlign: "center",
+      color:"white"
+    },
+
     title: {
       display: "inline-block",
       background:
@@ -73,7 +82,7 @@ export const theme = createTheme({
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
-      fontSize: "40px",
+      fontSize: "30px",
       fontWeight: "bold",
       "@media (max-width:600px)": {
         fontSize: "25px",
@@ -83,7 +92,7 @@ export const theme = createTheme({
       },
 
       "@media (min-width:961px)and (max-width:1260px)": {
-        fontSize: "40px",
+        fontSize: "30px",
       },
     },
 
@@ -113,7 +122,7 @@ export const theme = createTheme({
       fontWeight: 500,
       fontSize: "16px",
       lineHeight: "28px",
-      background: "#000000",
+      background: "white",
       backgroundClip: "text",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
@@ -136,7 +145,7 @@ export const theme = createTheme({
     },
 
     h1: {
-      fontSize: "50px",
+      fontSize: "45px",
       fontWeight: 700,
       lineHeight: "normal",
       textAlign: "center",
@@ -165,6 +174,7 @@ export const theme = createTheme({
       textWrap: "nowrap",
       fontWeight: "bold",
       fontSize: "18px",
+      color:"white",
       "@media (max-width:600px)": {
         fontSize: "14px",
       },
@@ -219,10 +229,11 @@ export const theme = createTheme({
     footerAddress: {
       fontSize: "16px",
       fontWeight: "400",
-      lineHeight: "25px",
+      lineHeight: "20px",
       textAlign: "center",
       width: "350px",
       color: "#0D0D0D",
+      
       "@media (max-width:600px)": {
         fontSize: "14px",
         lineHeight: "18px",
@@ -255,9 +266,9 @@ export const theme = createTheme({
     },
 
     moreImage: {
-       fontSize:"20px",
-       fontWeight:"500",
-       "@media (max-width:600px)": {
+      fontSize: "20px",
+      fontWeight: "500",
+      "@media (max-width:600px)": {
         fontSize: "10px",
       },
       "@media (min-width:601px)and (max-width:960px)": {
@@ -397,7 +408,7 @@ export const theme = createTheme({
             // },
           }),
           ...(ownerState.size === "medium" && {
-            fontSize: "20px",
+            fontSize: "15px",
             fontWeight: "600",
             alignContent: "center",
             textTransform: "capitalize",
@@ -406,7 +417,7 @@ export const theme = createTheme({
             gap: "8px",
             border: "1px solid",
             opacity: 1,
-            padding: "13px 35px",
+            padding: "8px 30px",
 
             "@media (max-width:600px)": {
               fontSize: "14px",
@@ -418,14 +429,14 @@ export const theme = createTheme({
               fontSize: "20px",
               width: "200px",
               height: "50px",
-              padding: "10px 20px",
+              padding: "8px 20px",
             },
 
             "@media (min-width:961px) and  (max-width:1260px)": {
               fontSize: "20px",
               width: "250px",
               height: "60px",
-              md: "15px 30px",
+              md: "10px 25px",
             },
           }),
           ...(ownerState.size === "small" && {

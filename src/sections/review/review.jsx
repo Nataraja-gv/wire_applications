@@ -22,7 +22,7 @@ const StyledDiv = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   color: "goldenrod",
-  padding:"30px"
+  padding: "30px",
 });
 
 function Review() {
@@ -49,10 +49,10 @@ function Review() {
     <Box
       sx={{
         margin: {
-          xs: "50px auto 0px",
-          sm: "50px auto 0px",
-          md: "50px auto 0px",
-          lg: "50px auto 20px",
+          xs: "50px auto 20px",
+          sm: "50px auto 40px",
+          md: "50px auto 40px",
+          lg: "50px auto 40px",
         },
         width: "100%",
       }}
@@ -74,12 +74,12 @@ function Review() {
               md: "100px",
               lg: "110px",
             },
-           margin: {
-            xs:"10px auto",
-            sm:"10px auto",
-            md:"20px auto",
-            lg:"20px auto"
-           }
+            margin: {
+              xs: "10px auto",
+              sm: "10px auto",
+              md: "20px auto",
+              lg: "20px auto",
+            },
           }}
         />
 
@@ -98,7 +98,6 @@ function Review() {
               alignItems: "center",
             },
             fontWeight: "bold",
-             
           }}
         >
           <span style={{ marginRight: "5px", fontWeight: "bold" }}>
@@ -112,24 +111,22 @@ function Review() {
         <Grid
           container
           width="90%"
-          
           sx={{
             display: "flex",
             flexDirection: "row",
             flexWrap: "nowrap",
             overflowX: "auto",
-
             WebkitOverflowScrolling: "touch",
             scrollbarWidth: "none",
             "&::-webkit-scrollbar": {
               display: "none",
             },
             margin: {
-            xs:"20px auto",
-            sm: "30px auto",
-            md: "40px auto",
-            lg:"50px auto"
-           }
+              xs: "20px auto",
+              sm: "30px auto",
+              md: "40px auto",
+              lg: "50px auto",
+            },
           }}
         >
           {reviews.map((item, index) => {
@@ -139,13 +136,12 @@ function Review() {
                 key={index}
                 sx={{
                   minWidth: {
-                    xs: "90%",
-                    sm: "32%",
-                    md: "32%",
-                    lg: "23%",
+                    xs: "100%",
+                    sm: "49%",
+                    md: "32.5%",
+                    lg: "24.3%",
                   },
-                  
-                  
+
                   borderRadius: "10px",
                   marginRight: "10px",
                   backgroundColor: "white",
@@ -166,11 +162,11 @@ function Review() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap:{
-              xs:"10px",
-              sm:"20px",
-              md:"30px",
-              lg:"30px"
+            gap: {
+              xs: "10px",
+              sm: "20px",
+              md: "30px",
+              lg: "30px",
             },
           }}
         >

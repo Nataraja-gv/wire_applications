@@ -6,18 +6,24 @@ import pub3 from "../../assets/caroursel/Images/slider2.jpg";
 export const mainCarouseldata = [
   {
     id: 1,
-    image:pub1,
+    image: pub1,
     title: "Experience Unforgettable Moments with Us",
+    btnName: "Explore Events",
+    TableName: "Book a Table",
   },
 
   {
     id: 2,
     image: pub2,
     title: "Experience Unforgettable Moments with Us",
+    btnName: "Explore Events",
+    TableName: "Book a Table",
   },
   {
     id: 3,
-    image:pub3,
+    image: pub3,
     title: "Experience Unforgettable Moments with Us",
+    btnName: "Explore Events",
+    TableName: "Book a Table",
   },
 ];

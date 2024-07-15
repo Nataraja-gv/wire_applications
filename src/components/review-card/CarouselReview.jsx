@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Box, Rating, Typography } from "@mui/material";
 
 const CarouselReview = ({ name, rating, review }) => {
@@ -7,7 +8,7 @@ const CarouselReview = ({ name, rating, review }) => {
       sx={{
         backgroundColor: "white",
         borderRadius: "10px",
-        padding:"20px"
+        padding:"30px"
       }}
     >
       <Typography variant="reviewName">{name}</Typography>

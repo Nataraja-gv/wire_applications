@@ -1,4 +1,25 @@
-import { Button, Grid, TextField, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import MenuItem from "@mui/material/MenuItem";
+
+const currencies = [
+  {
+    value: "Toca",
+    label: "Toca",
+  },
+  {
+    value: "Catch Up",
+    label: "Catch Up",
+  },
+  {
+    value: "Just BLR",
+    label: "Just BLR",
+  },
+  {
+    value: "MaCow",
+    label: "MaCow",
+  },
+];
 
 const Book = () => {
   return (
@@ -16,74 +37,36 @@ const Book = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography variant="title">Book a Table</Typography>
-          <Typography variant="booksubtitle">
-            Our friendly team would love to hear from you.
-          </Typography>
-        </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={6}>
-          <Typography variant="labeltext">First name</Typography>
-
-          <TextField
-            fullWidth
-            sx={{ backgroundColor: "white", borderRadius: "5px" }}
-            id="firstname"
-            size="small"
-            variant="outlined"
-          />
         </Grid>
 
-        <Grid item xs={12} sm={6} md={6} lg={6}>
-          <Typography variant="labeltext">Last name</Typography>
+        
+        <Grid
+          item
+          xs={12}
+          component="form"
+          sx={{
+            "& .MuiTextField-root": { m: 1 },
+          }}
+          noValidate
+          autoComplete="off"
+        >
           <TextField
-            fullWidth
             size="small"
-            sx={{ backgroundColor: "white", borderRadius: "5px" }}
-            id="lastname"
-            variant="outlined"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="labeltext">Phone number</Typography>
-          <TextField
-            sx={{ backgroundColor: "white", borderRadius: "5px" }}
-            id="phonenumber"
             fullWidth
-            size="small"
-            variant="outlined"
-          />
+            id="outlined-select-currency"
+            select
+            label="Select Outlet"
+            // defaultValue="Select Outlet"
+          >
+            {currencies.map((option) => (
+              <MenuItem key={option.value} value={option.value}>
+                {option.label}
+              </MenuItem>
+            ))}
+          </TextField>
         </Grid>
 
-        <Grid item xs={12}>
-          <Typography variant="labeltext">No. of Guests</Typography>
-          <TextField
-            id="number-of-guests"
-            type="number"
-            sx={{ backgroundColor: "white", borderRadius: "5px" }}
-            variant="outlined"
-            size="small"
-            fullWidth
-            inputProps={{
-              inputMode: "numeric",
-              pattern: "[0-9]*",
-            }}
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="labeltext">Message</Typography>
-          <TextField
-            id="outlined-multiline-flexible"
-            sx={{ backgroundColor: "white", borderRadius: "5px" }}
-            multiline
-            maxRows={4}
-            variant="outlined"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Button size="large" fullWidth variant="contained" color="primary">
-            Send message
-          </Button>
-        </Grid>
+        <Grid></Grid>
       </Grid>
     </Box>
   );

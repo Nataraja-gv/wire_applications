@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Typography from "@mui/material/Typography";
 import "./menu.css";
 import { Box } from "@mui/material";

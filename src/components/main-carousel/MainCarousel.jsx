@@ -1,11 +1,16 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Stack from "@mui/material/Stack";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 // import { theme } from "../../theme";
 import ButtonBtn from "../button/Button";
 import "./MainCarousel.css";
+import {
+  CustomLeftArrow,
+  CustomRightArrow,
+} from "../carousel-arrows/carouselarrow";
 
+// eslint-disable-next-line react/prop-types
 const MainCarousel = ({ carouselinfo = [] }) => {
   const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -25,11 +30,13 @@ const MainCarousel = ({ carouselinfo = [] }) => {
         containerClass="carousel-container"
         infinite={true}
         showDots={false}
+        customLeftArrow={<CustomLeftArrow />}
+        customRightArrow={<CustomRightArrow />}
         autoPlay={true}
         dotListClass={"react-multi-carousel-dot-list custom-dot-list-style"}
         autoPlaySpeed={2000}
         itemClass="carousel-item-padding-40-px itemimage"
-        removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
+        removeArrowOnDeviceType={["", "mobile", "tablet"]}
       >
         {carouselinfo.map((item, index) => (
           <Box key={index} position="relative">
@@ -52,7 +59,7 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                 transform: "translate(-50%, -45%)",
                 textAlign: "center",
                 width: "90%",
-                color: "#fff", // Example: Set text color
+                color: "#fff",
               }}
             >
               <Typography variant="h1">{item.title}</Typography>
@@ -64,9 +71,28 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                     sm: "20px",
                     lg: "25px",
                   },
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  gap: "20px",
                 }}
               >
-                <ButtonBtn btnName="Explore Events" />
+                <Link to="/events">
+                  {" "}
+                  <ButtonBtn btnName={item.btnName} />{" "}
+                </Link>
+                <Link
+                  to={item.path}
+                  smooth
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-100}
+                  style={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <ButtonBtn btnName={item.TableName} />{" "}
+                </Link>
               </Stack>
             </Box>
           </Box>

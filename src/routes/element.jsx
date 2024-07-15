@@ -1,24 +1,23 @@
+/* eslint-disable react/display-name */
 import { Suspense, lazy } from "react";
 import { Stack, CircularProgress } from "@mui/material";
 
-
-export const HomePage = lazy(() => import("../pages/home/HomePage"));
-
-
-<Suspense
-    fallback={
+const Loadable = (Component) => (props) =>
+  (
+    <Suspense
+      fallback={
         <Stack
-            alignItems="center"
-            justifyContent="center"
-            width="100%"
-            sx={{ margin: "250px auto" }}
+          alignItems="center"
+          justifyContent="center"
+          width="100%"
+          sx={{ margin: "250px auto" }}
         >
-            <CircularProgress />
+          <CircularProgress />
         </Stack>
-    }
->
-    <HomePage />
-</Suspense>
+      }
+    >
+      <Component {...props} />
+    </Suspense>
+  );
 
-
-
+export const HomePage = Loadable(lazy(() => import("../pages/home/HomePage")));
