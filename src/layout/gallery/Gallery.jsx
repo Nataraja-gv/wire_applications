@@ -38,11 +38,18 @@ export default function Gallery() {
     <div>
       <Box sx={{ position: "fixed", top: "0px", zIndex: 10, width: "100%" }}>
         {/* <NavBar /> */}
-      
+
         <NewNavBar />
       </Box>
-      <div style={{ width: "90%", margin: " 150px auto 40px" }}>
-        <Box>
+      <div style={{ width: "90%", margin: " 0px auto 40px" }}>
+        <Box sx={{
+          marginTop: {
+            xs: "100px",
+            sm: "100px",
+            md: "150px",
+            lg: "150px",
+          },
+        }}>
           <Typography variant="title" marginBottom="30px">
             Gallery
           </Typography>

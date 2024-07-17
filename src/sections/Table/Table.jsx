@@ -6,10 +6,10 @@ import rectangle from "../../assets/table/reactangle.png"; // Corrected import p
 export default function Table() {
   const StyledDiv = styled('div')({
     position: 'relative',
-    backgroundImage: `url(${rectangle})`,  
+    backgroundImage: `url(${rectangle})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '650px',
+    height: 'auto',
     width: "100%",
     opacity: 0.9,
     display: 'flex',
@@ -17,7 +17,8 @@ export default function Table() {
     justifyContent: 'center',
     alignItems: 'end',
     color: 'goldenrod',
-    overflow: 'hidden',  
+    overflow: 'hidden',
+    
   });
 
   // Styled component for the blurred overlay
@@ -36,8 +37,8 @@ export default function Table() {
 
   return (
     <StyledDiv>
-      <Container width="100%">
-        <Grid container spacing={0}>
+      <Container width="100%"  >
+        <Grid container spacing={0} padding="60px 0px ">
           {/* Grid item for the left column */}
           <Grid item xs={12} sm={7} md={5} lg={5} position="relative">
             {/* Blur overlay */}
@@ -47,7 +48,7 @@ export default function Table() {
           </Grid>
           {/* Grid item for the right column */}
           <Grid item xs={12} sm={5} md={5} lg={5}>
-            
+
           </Grid>
         </Grid>
       </Container>
