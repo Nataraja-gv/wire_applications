@@ -56,7 +56,7 @@ const Footer = () => {
                   "&:hover": {
                     scale: "1.2",
                   },
-                  marginTop: "1rem", 
+                  marginTop: "1rem",
                 }}
               >
                 {item.name}
@@ -73,7 +73,7 @@ const Footer = () => {
             borderRadius: "5px",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "1rem",  
+            marginTop: "1rem",
           }}
         >
           <FacebookIcon color="primary" sx={{ fontSize: 25 }} />
@@ -85,6 +85,13 @@ const Footer = () => {
       <Box
         sx={{
           display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "row",
+            md: "row",
+            lg: "row"
+
+          },
           justifyContent: "space-between",
           alignItems: "center",
           mt: "20px",

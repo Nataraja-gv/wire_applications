@@ -77,7 +77,7 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                   gap: "20px",
                 }}
               >
-                <Link to="/events">
+                <Link to="events">
                   {" "}
                   <ButtonBtn sx={{
                      
