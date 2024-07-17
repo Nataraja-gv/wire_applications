@@ -7,6 +7,7 @@ import MainCarousel from "../../components/main-carousel/MainCarousel";
 import Table from "../../sections/Table/Table";
 import { mainCarouseldata } from "../../data/maincarousel/maindata";
 import Review from "../../sections/review/review";
+import OutLets from "../../sections/outlets/outlets"
 
 const HomePage = () => {
   return (
@@ -16,6 +17,9 @@ const HomePage = () => {
       {/* Other sections */}
       <div id="about">
         <About />
+      </div>
+      <div id="outlet">
+        <OutLets />
       </div>
       <div id="event">
         <Event />

@@ -318,14 +318,19 @@ export const theme = createTheme({
 
     eventh1: {
       fontSize: "25px",
-      fontWeight: "bold",
-      lineHeight: "normal",
+      fontWeight: "700",
       background: "#0D0D0D",
       WebkitBackgroundClip: "text",
       backgroundClip: "text",
       WebkitTextFillColor: "transparent",
       width: "fit-content",
-      display: "block",
+      display: '-webkit-box',
+      WebkitLineClamp: 2,
+      WebkitBoxOrient: 'vertical',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+
+
       // backgroundColor:"green"
       "@media (max-width:600px)": {
         fontSize: "16px",
@@ -425,7 +430,7 @@ export const theme = createTheme({
             border: "1px solid #765c92",
             opacity: 1,
             padding: "8px 30px",
-             
+
 
             "@media (max-width:600px)": {
               fontSize: "10px",
@@ -435,13 +440,13 @@ export const theme = createTheme({
             },
             "@media (min-width:601px) and  (max-width:960px)": {
               fontSize: "16px",
-              
+
               padding: "6px 15px",
             },
 
             "@media (min-width:961px) and  (max-width:1260px)": {
               fontSize: "18px",
-               
+
               md: "8px 18px",
             },
           }),

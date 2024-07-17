@@ -39,8 +39,8 @@ const Menu = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          // justifyContent: "center",
+          // alignItems: "center",
         }}
       >
         <Typography variant="title" sx={{ marginBottom: "20px" }}>
