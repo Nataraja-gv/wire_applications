@@ -8,7 +8,7 @@ import styles from "../../sections/Events/Event.module.css";
 import { FaFilter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NavBar from "../nav/NavBar";
- 
+
 
 import NewNavBar from "../nav/NewNavBar";
 
@@ -19,8 +19,8 @@ export default function EventsPage() {
   }, []);
   return (
     <div>
-      <Box sx={{ position: "fixed", top: "0px", zIndex: 10, width: "100%"}}>
-      {/* <NavBar/> */}
+      <Box sx={{ position: "fixed", top: "0px", zIndex: 10, width: "100%" }}>
+        {/* <NavBar/> */}
 
         <NewNavBar />
       </Box>
@@ -30,25 +30,30 @@ export default function EventsPage() {
           margin: "auto",
         }}
       >
-        
+
         <Stack
           sx={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-            marginTop: "150px"
+
+            marginTop: {
+              xs: "100px",
+              sm: "100px",
+              md: "150px",
+              lg: "150px",
+            },
           }}
         >
           <Typography
             variant="title"
             sx={{
-              marginTop: {
-                xs: "30px",
-                sm: "0px",
-                md: "0px",
-                lg: "0px",
-              },
+              fontSize: {
+                xs: "15px",
+                sm: "16px",
+                md: "20px"
+              }
             }}
           >
             All Upcoming Events
