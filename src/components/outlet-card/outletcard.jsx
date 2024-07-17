@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
+import "./outletcard.css"
 
 export default function OutletCard({ image, outlet_name, address, description }) {
     return (
@@ -15,7 +16,7 @@ export default function OutletCard({ image, outlet_name, address, description })
                 backgroundColor: "transparent",
             }}
         >
-            <img src={image} alt="" className="eventimages" />{" "}
+            <img src={image} alt="" className="outletsimages"  height="100px"/>{" "}
 
             <Box
                 sx={{
