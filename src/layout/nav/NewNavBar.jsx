@@ -2,12 +2,14 @@
 /* eslint-disable no-unused-vars */
 import { Box, Drawer, IconButton, List, ListItem, ListItemText, Stack, Typography, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import whatsapp from "../../assets/whatsapp.svg";
 import "./nav.css";
 import toco_logo from "../../assets/images/toca (2).png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from 'react-router-dom';
+
 
 const navItems = [
   { name: "About us", path: "about" },
@@ -51,7 +53,7 @@ export default function NewNavBar() {
 
           }}
         >
-          <Link to="home" smooth duration={500} spy={true} exact="true">
+          <Link to="/">
             <Box
               component="img"
               src={toco_logo}
@@ -113,7 +115,7 @@ export default function NewNavBar() {
                       onClick={handleDrawerClose}
                       disableGutters
                     >
-                      <Link
+                      <ScrollLink
                         to={item.path}
                         smooth
                         duration={500}
@@ -123,7 +125,7 @@ export default function NewNavBar() {
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <ListItemText primary={item.name} />
-                      </Link>
+                      </ScrollLink>
                     </ListItem>
                   ))}
                 </List>
@@ -139,7 +141,7 @@ export default function NewNavBar() {
 
           <div className="BoxDiv" style={{ position: "relative" }}>
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Link to="/" smooth duration={500} spy={true} exact="true">
+              <Link to="/">
                 <Box
                   component="img"
                   src={toco_logo}
@@ -190,15 +192,15 @@ export default function NewNavBar() {
             {/* // Desktop view */}
             <Stack direction="row" spacing={3}>
               {navItems.map((item, index) => (
-                <Link
+                <ScrollLink
                   to={item.path}
                   key={index}
                   smooth={true}
                   duration={500}
-                  offset={-130}
+                  offset={-140}
                 >
                   <Typography variant="navtitle">{item.name}</Typography>
-                </Link>
+                </ScrollLink>
               ))}
             </Stack>
 

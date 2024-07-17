@@ -1,10 +1,11 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Stack from "@mui/material/Stack";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 // import { theme } from "../../theme";
 import ButtonBtn from "../button/Button";
 import "./MainCarousel.css";
+import { Link as ScrollLink } from 'react-scroll';
 import {
   CustomLeftArrow,
   CustomRightArrow,
@@ -77,26 +78,12 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                   gap: "20px",
                 }}
               >
-                <Link to="events">
-                  {" "}
-                  <ButtonBtn sx={{
-                     
-                  }} btnName={item.btnName} />{" "}
-                </Link>
-                <Link
-                  to={item.path}
-                  smooth
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-100}
-                  style={{ textDecoration: "none" }}
-                >
-                  {" "}
-                  <ButtonBtn sx={{
-                    
-                  }} btnName={item.TableName} />{" "}
-                </Link>
+                <ScrollLink to="event" smooth duration={500} spy={true} exact="true" offset={-140}>
+                  <ButtonBtn btnName={item.btnName} />
+                </ScrollLink>
+                <ScrollLink to="table" smooth duration={500} spy={true} exact="true" offset={-140}>
+                  <ButtonBtn btnName={item.TableName} />
+                </ScrollLink>
               </Stack>
             </Box>
           </Box>
