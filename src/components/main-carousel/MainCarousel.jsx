@@ -79,7 +79,9 @@ const MainCarousel = ({ carouselinfo = [] }) => {
               >
                 <Link to="/events">
                   {" "}
-                  <ButtonBtn btnName={item.btnName} />{" "}
+                  <ButtonBtn sx={{
+                     
+                  }} btnName={item.btnName} />{" "}
                 </Link>
                 <Link
                   to={item.path}
@@ -91,7 +93,9 @@ const MainCarousel = ({ carouselinfo = [] }) => {
                   style={{ textDecoration: "none" }}
                 >
                   {" "}
-                  <ButtonBtn btnName={item.TableName} />{" "}
+                  <ButtonBtn sx={{
+                    
+                  }} btnName={item.TableName} />{" "}
                 </Link>
               </Stack>
             </Box>

@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import toco_logo from "../../assets/images/toca (2).png";
 import NewNavBar from "../nav/NewNavBar";
 import $ from "jquery";
+// import NavBar from "../nav/NavBar";
+
 import "magnific-popup/dist/magnific-popup.css";
 
 export default function Gallery() {
@@ -35,6 +37,8 @@ export default function Gallery() {
   return (
     <div>
       <Box sx={{ position: "fixed", top: "0px", zIndex: 10, width: "100%" }}>
+        {/* <NavBar /> */}
+      
         <NewNavBar />
       </Box>
       <div style={{ width: "90%", margin: " 150px auto 40px" }}>

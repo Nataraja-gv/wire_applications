@@ -71,7 +71,7 @@ export const theme = createTheme({
       fontWeight: " 700",
       lineHeight: "25.6px",
       textAlign: "center",
-      color:"white"
+      color: "#0D0D0D"
     },
 
     title: {
@@ -122,7 +122,7 @@ export const theme = createTheme({
       fontWeight: 500,
       fontSize: "16px",
       lineHeight: "28px",
-      background: "white",
+      background: "#000000",
       backgroundClip: "text",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
@@ -151,15 +151,24 @@ export const theme = createTheme({
       textAlign: "center",
       color: " #FFFFFF",
       "@media (max-width:600px)": {
-        fontSize: "25px",
+        fontSize: "20px",
       },
       "@media (min-width:601px)and (max-width:960px)": {
-        fontSize: "35px",
+        fontSize: "30px",
       },
 
       "@media (min-width:961px)and (max-width:1260px)": {
         fontSize: "45px",
       },
+    },
+
+    caption: {
+      fontFamily: "DM Sans",
+      fontWeight: "400",
+      fontSize: "0.85rem",
+      // "@media (max-width:600px)": {
+      //   fontSize: "0.6rem",
+      // },
     },
 
     labeltext: {
@@ -174,7 +183,7 @@ export const theme = createTheme({
       textWrap: "nowrap",
       fontWeight: "bold",
       fontSize: "18px",
-      color:"white",
+      color: "#000000",
       "@media (max-width:600px)": {
         fontSize: "14px",
       },
@@ -233,7 +242,7 @@ export const theme = createTheme({
       textAlign: "center",
       width: "350px",
       color: "#0D0D0D",
-      
+
       "@media (max-width:600px)": {
         fontSize: "14px",
         lineHeight: "18px",
@@ -412,6 +421,37 @@ export const theme = createTheme({
             fontWeight: "600",
             alignContent: "center",
             textTransform: "capitalize",
+            gap: "8px",
+            border: "1px solid #765c92",
+            opacity: 1,
+            padding: "8px 30px",
+             
+
+            "@media (max-width:600px)": {
+              fontSize: "10px",
+              // width: "150px",
+              // height: "30px",
+              padding: "5px 10px",
+            },
+            "@media (min-width:601px) and  (max-width:960px)": {
+              fontSize: "20px",
+              width: "200px",
+              height: "50px",
+              padding: "8px 20px",
+            },
+
+            "@media (min-width:961px) and  (max-width:1260px)": {
+              fontSize: "20px",
+              width: "250px",
+              height: "60px",
+              md: "10px 25px",
+            },
+          }),
+          ...(ownerState.size === "small" && {
+            fontSize: "15px",
+            fontWeight: "600",
+            alignContent: "center",
+            textTransform: "capitalize",
             // width: "230px",
             // height: "55px",
             gap: "8px",
@@ -439,41 +479,22 @@ export const theme = createTheme({
               md: "10px 25px",
             },
           }),
-          ...(ownerState.size === "small" && {
-            padding: "4px 8px",
 
-            height: "1.8125rem",
-            fontSize: "0.875rem",
-            fontFamily: "Poppins ",
-            fontWeight: 500,
-            alignContent: "center",
-            // "@media (max-width:600px)": {
-            //   fontSize: "0.5rem",
-            //   padding: "2px 4px",
-            //   height: "1.4rem",
-            // },
-            // "@media (max-width:960px)": {
-            //   fontSize: "0.65rem",
-            //   padding: "3px 6px",
-            //   height: "1.6rem",
-            // },
-          }),
-          textTransform: "none",
-          borderRadius: "4px",
         }),
       },
     },
 
-    // MuiTextField: {
-    //   styleOverrides: {
-    //     root: ({ ownerState }) => ({
-    //       ...(ownerState.size === "small" && {
-    //         backgroundcolor: "#FFFFFF",
-    //         height: "25px",
-    //         borderRadius: "5px",
-    //       }),
-    //     }),
-    //   },
-    // },
+    MuiTextField: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.size === "small" && {
+            backgroundcolor: "white",
+            height: "auto",
+            borderRadius: "0px",
+            padding: "0px"
+          }),
+        }),
+      },
+    },
   },
 });

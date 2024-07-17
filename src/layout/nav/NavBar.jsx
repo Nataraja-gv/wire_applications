@@ -51,7 +51,7 @@ const Navbar = () => {
         top: 0,
         zIndex: 10,
         padding: "6px 20px",
-        
+
       }}
     >
       <Link to="home" smooth duration={500} spy={true} exact="true">
@@ -65,7 +65,10 @@ const Navbar = () => {
               md: "3rem",
               lg: "3rem",
             },
+           
           }}
+
+
         />
       </Link>
       {matches ? (
