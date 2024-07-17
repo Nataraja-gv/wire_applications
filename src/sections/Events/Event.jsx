@@ -27,18 +27,17 @@ const Event = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          marginTop: {
+            xs: "30px",
+            sm: "20px",
+            md: "20px",
+            lg: "0px",
+          },
         }}
       >
         <Typography
           variant="title"
-          sx={{
-            marginTop: {
-              xs: "30px",
-              sm: "0px",
-              md: "0px",
-              lg: "0px",
-            },
-          }}
+
         >
           Upcoming Events
         </Typography>

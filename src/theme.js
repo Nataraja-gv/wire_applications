@@ -106,11 +106,11 @@ export const theme = createTheme({
       WebkitTextFillColor: "transparent",
       width: "fit-content",
       "@media (max-width:600px)": {
-        display: "none",
-        // fontSize: "25px",
+        // display: "none",
+        fontSize: "10px",
       },
       "@media (min-width:601px)and (max-width:960px)": {
-        display: "none",
+        // display: "none",
       },
 
       "@media (min-width:961px)and (max-width:1260px)": {
@@ -158,7 +158,7 @@ export const theme = createTheme({
       },
 
       "@media (min-width:961px)and (max-width:1260px)": {
-        fontSize: "45px",
+        fontSize: "35px",
       },
     },
 
@@ -434,17 +434,15 @@ export const theme = createTheme({
               padding: "5px 10px",
             },
             "@media (min-width:601px) and  (max-width:960px)": {
-              fontSize: "20px",
-              width: "200px",
-              height: "50px",
-              padding: "8px 20px",
+              fontSize: "16px",
+              
+              padding: "6px 15px",
             },
 
             "@media (min-width:961px) and  (max-width:1260px)": {
-              fontSize: "20px",
-              width: "250px",
-              height: "60px",
-              md: "10px 25px",
+              fontSize: "18px",
+               
+              md: "8px 18px",
             },
           }),
           ...(ownerState.size === "small" && {

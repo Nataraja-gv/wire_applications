@@ -71,8 +71,8 @@ const About = () => {
               width: "100%",
               height: {
                 xs: "308px",
-                sm: "400px",
-                md: "500px",
+                sm: "300px",
+                md: "400px",
                 lg: "400px",
               },
               marginTop: {
