@@ -1,9 +1,9 @@
 import { Grid, Container } from "@mui/material";
 import { styled } from "@mui/system";
-import Book from "../../components/book-table/Book";
+import BookTableCard from "../../components/book-table/BookTablecard";
 import rectangle from "../../assets/table/reactangle.png"; // Corrected import path
 
-export default function Table() {
+export default function BookTable() {
   const StyledDiv = styled('div')({
     position: 'relative',
     backgroundImage: `url(${rectangle})`,
@@ -44,7 +44,7 @@ export default function Table() {
             {/* Blur overlay */}
             <BlurOverlay />
             {/* Book component */}
-            <Book />
+            <BookTableCard />
           </Grid>
           {/* Grid item for the right column */}
           <Grid item xs={12} sm={5} md={5} lg={5}>

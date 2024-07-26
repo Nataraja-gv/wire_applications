@@ -2,7 +2,7 @@
 import Box from "@mui/material/Box";
 import NewNavBar from "../nav/NewNavBar";
 import NavBar from "../nav/NavBar";
-import HomePage from "../../pages/home/HomePage";
+import HomePage from "../../pages/homepage/HomePage";
 import Footer from "../footer/Footer";
 import { useEffect } from "react";
 

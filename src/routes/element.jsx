@@ -20,4 +20,6 @@ const Loadable = (Component) => (props) =>
     </Suspense>
   );
 
-export const HomePage = Loadable(lazy(() => import("../pages/home/HomePage")));
+export const HomePage = Loadable(lazy(() => import("../pages/homepage/HomePage")));
+
+export const MenuHomePage =Loadable(lazy(()=>import ("../pages/menu-home-page/MenuHomePage"))) ;

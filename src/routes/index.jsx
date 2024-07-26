@@ -1,8 +1,9 @@
 import { useRoutes } from "react-router-dom";
 import HomeLayout from "../layout/home-layout/HomeLayout";
-import EventsPage from "../layout/eventspage/EventsPage"
-import { HomePage} from "./element";
-import Gallery from "../layout/gallery/Gallery";
+import EventsPageLayout from "../layout/events-page/EventsPageLayout";
+import { HomePage, MenuHomePage } from "./element";
+import GalleryLayout from "../layout/gallery-page/GalleryLayout";
+import { MenuLayout } from "../layout/menu-page/MenuLayout";
 
 const Router = () => {
   return useRoutes([
@@ -14,12 +15,22 @@ const Router = () => {
 
     {
       path: "/events",
-      element: <EventsPage />,
+      element: <EventsPageLayout />,
     },
 
     {
       path: "/gallery",
-      element: <Gallery/>,
+      element: <GalleryLayout />,
+    },
+    {
+      path: "/menu-details",
+      element: <MenuLayout />,
+      Children: [
+        {
+          element: <MenuHomePage />,
+          index: true,
+        },
+      ],
     },
   ]);
 };

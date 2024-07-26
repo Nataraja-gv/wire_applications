@@ -7,6 +7,7 @@ import {
   IconButton,
   Button,
 } from "@mui/material";
+import { getDate2to2 } from "../../functions"
 import { useTheme } from "@mui/material/styles";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import MenuItem from "@mui/material/MenuItem";
@@ -18,6 +19,8 @@ import calendra from "../../assets/calender.svg";
 import Select from "@mui/material/Select";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+// import { Link } from "react-router-dom";
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 export const textDay = {
   padding: "2px 10px",
@@ -60,7 +63,7 @@ function getStyles(name, personName, theme) {
   };
 }
 
-const Book = () => {
+const BookTableCard = () => {
   const theme = useTheme();
   const [selectedData, setSelectedData] = useState(null);
   const [personName, setPersonName] = useState([]);
@@ -69,6 +72,10 @@ const Book = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [lunch, setLunch] = useState("");
   const [dinner, setDinner] = useState("");
+  const [tabName, setTabName] = useState('Tables');
+  const [currentDate, setCurrentDate] = useState({})
+
+
 
   const handleChange = (event) => {
     setPersonName(event.target.value);
@@ -88,13 +95,18 @@ const Book = () => {
   const isMediumScreen = useMediaQuery((theme) =>
     theme.breakpoints.between("sm", "md")
   );
+  const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.between("md", "lg"));
 
   let maxItems;
   if (isSmallScreen) {
-    maxItems = 4;
+    maxItems = 5;
   } else if (isMediumScreen) {
+    maxItems = 5;
+  } else if (isLargeScreen) {
     maxItems = 6;
-  } else {
+
+  }
+  else {
     maxItems = 9;
   }
 
@@ -146,7 +158,16 @@ const Book = () => {
         </Grid>
 
         <div style={{ width: "100%" }}>
-          <FormControl sx={{ mb: 1, width: "100%", mt: 3 }}>
+
+          <FormControl sx={{
+            mb: 1, width: "100%", mt: 3, borderColor: {
+
+              "&:hover": {
+                border: "2px solid #8976fd",
+
+              }
+            }, border: "2px solid #C8C8C8", borderRadius: "5px"
+          }}>
             <Select
               multiple
               displayEmpty
@@ -160,6 +181,7 @@ const Book = () => {
 
                 return selected.join(", ");
               }}
+
               MenuProps={MenuProps}
               inputProps={{ "aria-label": "Without label" }}
               sx={{
@@ -191,87 +213,84 @@ const Book = () => {
           </FormControl>
         </div>
 
-        <Box>
-          <Typography sx={{ color: "#2A2A2A", fontWeight: "600" }}>
-            Adults
-          </Typography>
 
-          <Stack
-            direction="row"
-            width="100%"
-            sx={{ justifyContent: "center", alignItems: "center", gap: "0.8px" }}
-          >
+        <Stack width="100%" color="black">
+          <Typography sx={{ color: "#2A2A2A", fontWeight: "500" }}>Adults</Typography>
+          <Stack direction="row" backgroundColor="white">
             <Stack
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                gap: "0.8px"
-              }}
-            >
+              }}>
               {[...Array(maxItems)].map((_, index) => (
                 <MenuItem
                   key={index + 1}
+
                   sx={{
-                    border: "2px solid gray",
-                    borderRadius: "2px",
-
-
+                    border: "2px solid #C8C8C8",
+                    borderRadius: "0px",
                     borderColor: {
                       "&:hover": {
                         border: "2px solid #8976fd",
-                        backgroundColor: "white",
-                      },
 
-                    },
-
-                    backgroundColor: "white",
+                      }
+                    }
                   }}
                 >
                   {index + 1}
                 </MenuItem>
               ))}
+
             </Stack>
 
 
+            <Stack border="2px solid #C8C8C8" sx={{
+              borderColor: {
+                "&:hover": {
+                  border: "2px solid #8976fd",
 
-
-            <Stack >
+                }
+              }
+            }}>
               <TextField
                 type="number"
                 size="small"
-                sx={{
-                  backgroundColor: "white",
-                  borderRadius: "5px",
-                  border: "none",       // To remove the border
-                  outline: "none",
-                  border: "2px solid gray",
-
-                  // To remove the outline
-                }}
                 required
+
                 inputProps={{
                   min: 1,
                   step: 1,
                   pattern: "[0-9]*",
+                  style: { borderBottom: 'none' },
+
                 }}
+                InputProps={{ disableUnderline: true }}
               />
+
             </Stack>
           </Stack>
-        </Box>
 
-        <Grid container  marginTop="10px">
+        </Stack>
+
+        <Grid container marginTop="10px">
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Box
               sx={{
-                border: "1px solid rgba(2, 118, 229, 1)",
+                border: "2px solid #C8C8C8",
                 borderRadius: "4px",
                 padding: "2px 10px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
                 position: "relative",
-                BackGroundColor: "white",
-                 backgroundColor:"white"
+                borderColor: {
+                  "&:hover": {
+                    border: "2px solid #8976fd",
+
+                  }
+                },
+                backgroundColor: "white",
+                color: "black"
               }}
             >
               <Box
@@ -279,7 +298,7 @@ const Book = () => {
                   display: "flex",
                   alignItems: "center",
                   cursor: "pointer",
-                  
+
                 }}
                 onClick={handleIconButtonClick}
               >
@@ -345,7 +364,12 @@ const Book = () => {
           width="100%"
           marginTop="10px"
           sx={{
-            border: "1px solid rgba(2, 118, 229, 1)",
+            border: "2px solid #C8C8C8",
+            borderColor: {
+              "&:hover": {
+                border: "2px solid #8976fd",
+              }
+            },
             borderRadius: "4px",
             display: "flex",
             flexDirection: "column",
@@ -353,6 +377,7 @@ const Book = () => {
             justifyContent: "center",
             backgroundColor: "white",
             position: "relative",
+            color: "black"
           }}
         >
           <Box
@@ -383,7 +408,7 @@ const Book = () => {
                   <Grid item xs={3} sm={4} md={4} lg={3} key={index}>
                     <Typography
                       sx={{
-                        border: "1px solid red",
+                        border: "1px solid #C8C8C8",
                         textAlign: "center",
                         borderRadius: "5px",
                         padding: "5px",
@@ -402,7 +427,12 @@ const Book = () => {
           width="100%"
           marginTop="10px"
           sx={{
-            border: "1px solid rgba(2, 118, 229, 1)",
+            border: "2px solid #C8C8C8",
+            borderColor: {
+              "&:hover": {
+                border: "2px solid #8976fd",
+              }
+            },
             borderRadius: "4px",
             display: "flex",
             flexDirection: "column",
@@ -410,6 +440,7 @@ const Book = () => {
             justifyContent: "center",
             backgroundColor: "white",
             position: "relative",
+            color: "black"
           }}
         >
           <Box
@@ -440,7 +471,7 @@ const Book = () => {
                   <Grid item xs={3} sm={4} md={4} lg={3} key={index}>
                     <Typography
                       sx={{
-                        border: "1px solid red",
+                        border: "1px solid #C8C8C8",
                         textAlign: "center",
                         borderRadius: "5px",
                         padding: "5px",
@@ -466,8 +497,9 @@ const Book = () => {
       >
         <Typography sx={{ color: "white" }}>Reserve your Spot</Typography>
       </Button>
+
     </Box>
   );
 };
 
-export default Book;
+export default BookTableCard;
