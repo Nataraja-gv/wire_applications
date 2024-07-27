@@ -1,16 +1,16 @@
 import { useRoutes } from "react-router-dom";
 import HomeLayout from "../layout/home-layout/HomeLayout";
 import EventsPageLayout from "../layout/events-page/EventsPageLayout";
-import { HomePage, MenuHomePage } from "./element";
+import { HomePage, MenuHomePage, MenuSalad } from "./element";
 import GalleryLayout from "../layout/gallery-page/GalleryLayout";
-import { MenuLayout } from "../layout/menu-page/MenuLayout";
+import { MenuLayout } from "../layout/menu-Layout/MenuLayout";
 
 const Router = () => {
   return useRoutes([
     {
       path: "/",
       element: <HomeLayout />,
-      Children: [{ element: <HomePage />, index: true }],
+      children: [{ element: <HomePage />, index: true }],
     },
 
     {
@@ -25,7 +25,7 @@ const Router = () => {
     {
       path: "/menu-details",
       element: <MenuLayout />,
-      Children: [
+      children: [
         {
           element: <MenuHomePage />,
           index: true,

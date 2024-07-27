@@ -1,7 +1,7 @@
-import image1 from "../../assets/MenuImages/Images/cocktail.png"
-import image2 from "../../assets/MenuImages/Images/menuitem.jpeg"
-import image3 from "../../assets/MenuImages/Images/Drinks.jpeg"
-import image4 from "../../assets/MenuImages/Images/Food.jpeg"
+import image1 from "../../assets/MenuImages/Images/menu_img1.png"
+import image2 from "../../assets/outlets/outlet2.png"
+import image3 from "../../assets/MenuImages/Images/menu_img3.png"
+import image4 from "../../assets/MenuImages/Images/menu_img4.png"
 
 export const MenuData=[
     {

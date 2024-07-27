@@ -3,6 +3,6 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-export default function MenuMain() {
-  return <Box> {children}</Box>;
+export default function MenuMain({children}) {
+  return <Box sx={{marginBottom:"50px"}}> {children}</Box>;
 }

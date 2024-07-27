@@ -163,10 +163,12 @@ const BookTableCard = () => {
             mb: 1, width: "100%", mt: 3, borderColor: {
 
               "&:hover": {
-                border: "2px solid #8976fd",
+                border: "2px solid #A31916",
 
               }
-            }, border: "2px solid #C8C8C8", borderRadius: "5px"
+            // 
+            },
+             border: "2px solid #A31916", borderRadius: "5px"
           }}>
             <Select
               multiple
@@ -216,7 +218,7 @@ const BookTableCard = () => {
 
         <Stack width="100%" color="black">
           <Typography sx={{ color: "#2A2A2A", fontWeight: "500" }}>Adults</Typography>
-          <Stack direction="row" backgroundColor="white">
+          <Stack direction="row" backgroundColor="white" borderRadius="5px">
             <Stack
               sx={{
                 display: "flex",
@@ -228,10 +230,12 @@ const BookTableCard = () => {
 
                   sx={{
                     border: "2px solid #C8C8C8",
-                    borderRadius: "0px",
+                   borderTopLeftRadius:index== 0 && "5px",
+                   borderBottomLeftRadius:index== 0 && "5px",
+
                     borderColor: {
                       "&:hover": {
-                        border: "2px solid #8976fd",
+                        border: "2px solid #A31916",
 
                       }
                     }
@@ -247,10 +251,14 @@ const BookTableCard = () => {
             <Stack border="2px solid #C8C8C8" sx={{
               borderColor: {
                 "&:hover": {
-                  border: "2px solid #8976fd",
+                  border: "2px solid #A31916",
 
                 }
-              }
+                
+              },
+              borderTopRightRadius:  "5px",
+              borderBottomRightRadius:  "5px",
+
             }}>
               <TextField
                 type="number"
@@ -285,7 +293,7 @@ const BookTableCard = () => {
                 position: "relative",
                 borderColor: {
                   "&:hover": {
-                    border: "2px solid #8976fd",
+                    border: "2px solid #A31916",
 
                   }
                 },
@@ -367,7 +375,7 @@ const BookTableCard = () => {
             border: "2px solid #C8C8C8",
             borderColor: {
               "&:hover": {
-                border: "2px solid #8976fd",
+                border: "2px solid #A31916",
               }
             },
             borderRadius: "4px",
@@ -430,7 +438,7 @@ const BookTableCard = () => {
             border: "2px solid #C8C8C8",
             borderColor: {
               "&:hover": {
-                border: "2px solid #8976fd",
+                border: "2px solid #A31916",
               }
             },
             borderRadius: "4px",
@@ -492,7 +500,7 @@ const BookTableCard = () => {
         fullWidth
         sx={{
           marginTop: "10px",
-          backgroundColor: "#8976fd",
+          backgroundColor: "#A31916",
         }}
       >
         <Typography sx={{ color: "white" }}>Reserve your Spot</Typography>

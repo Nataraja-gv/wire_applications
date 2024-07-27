@@ -5,13 +5,13 @@ import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 // import ReviewCard from "../../components/review-card/ReviewCard"; // Correct import path
 import CarouselReview from "../../components/review-card/CarouselReview";
-
+import Background_image from "../../assets/images1/bigbarbeque3.png"
 import { Grid, Stack, Typography } from "@mui/material";
 import { useContext } from "react";
 import { EventContext } from "../../context/tickets-context/context";
 
 const StyledDiv = styled("div")({
-  backgroundImage: `url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg')`,
+  backgroundImage: `url(${Background_image})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   height: "auto",

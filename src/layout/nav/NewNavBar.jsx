@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import whatsapp from "../../assets/whatsapp.svg";
 import "./nav.css";
-import toco_logo from "../../assets/images/toca (2).png";
+import  Big_Barbeque from "../../assets/images1/big-barbeque.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from 'react-router-dom';
@@ -56,13 +56,13 @@ export default function NewNavBar() {
           <Link to="/">
             <Box
               component="img"
-              src={toco_logo}
+              src={ Big_Barbeque}
               sx={{
                 maxWidth: {
-                  xs: "2.5rem",
-                  sm: "3rem",
-                  md: "3rem",
-                  lg: "3rem",
+                  xs: "4rem",
+                  sm: "4rem",
+                  md: "4rem",
+                  lg: "4rem",
                 },
 
               }}
@@ -144,17 +144,17 @@ export default function NewNavBar() {
               <Link to="/">
                 <Box
                   component="img"
-                  src={toco_logo}
+                  src={Big_Barbeque}
                   alt="Logo"
                   sx={{
                     position: "absolute",
-                    left: "40%",
-                    top: "35px",
+                    left: "35%",
+                    top: "18px",
                     maxWidth: {
-                      xs: "3rem",
-                      sm: "3rem",
-                      md: "3rem",
-                      lg: "4rem",
+                      xs: "6rem",
+                      sm: "6rem",
+                      md: "6rem",
+                      lg: "6rem",
                     },
                     cursor: "pointer",
                     display: "block",
@@ -220,7 +220,8 @@ export default function NewNavBar() {
                 sm: "none",
                 md:"block",
                 lg:"block"
-              }
+              },
+              cursor:"pointer"
             }}
           >
             <img src={whatsapp} alt="socialmedia" width="30px" height="30px" />

@@ -1,5 +1,5 @@
 import { Box, Typography, Stack } from "@mui/material";
-import toco_logo from "../../assets/images/toca (2).png";
+import  big_barbique from "../../assets/images1/big-barbeque.png";
 import { NavLink } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
@@ -28,12 +28,13 @@ const Footer = () => {
           alignItems: "center",
           justifyContent: "center",
           padding: "20px",
-          backgroundColor: "#ede7f6",
+         background: "#330100",
+
           borderRadius: "30px",
         }}
       >
         <Stack direction="column" alignItems="center" spacing={2}>
-          <img src={toco_logo} alt="TOCO Logo" style={{ maxWidth: "4rem" }} />
+          <img src={big_barbique} alt="TOCO Logo" style={{ maxWidth: "5rem" }} />
 
           <Typography variant="footerAddress" sx={{ marginTop: "1rem" }}>
             122/A, 105, KHB Colony, 5th Block, 1st A Cross Road, Koramangala,
@@ -98,12 +99,12 @@ const Footer = () => {
           mb: "30px",
         }}
       >
-        <Typography variant="copytitle">
+        {/* <Typography variant="copytitle">
           ©️ Copyright 2024 TicketsQue. All Rights Reserved
         </Typography>
         <Typography variant="copytitle">
           <span style={{ fontWeight: "400" }}>Powered by</span> TicketsQue{" "}
-        </Typography>
+        </Typography> */}
       </Box>
     </div>
   );

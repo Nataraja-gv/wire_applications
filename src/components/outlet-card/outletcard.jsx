@@ -31,7 +31,7 @@ export default function OutletCard({ image, outlet_name, address, description })
                 }}
             >
 
-                <Typography variant="eventh1" sx={{ fontSize: "25px", lineHeight: "20px", }}>
+                <Typography variant="eventh1" sx={{ fontSize: "25px", lineHeight: "normal", }}>
                     {outlet_name}  
 
                 </Typography>

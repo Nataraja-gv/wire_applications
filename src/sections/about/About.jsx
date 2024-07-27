@@ -1,5 +1,5 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import about_icon from "../../assets/about/aboutImage.png";
+import about_icon from "../../assets/about/about_barbeque.png";
 
 const About = () => {
   return (
@@ -39,25 +39,28 @@ const About = () => {
               extraordinary events. With years of experience in the industry, we
               specialize in creating memorable experiences that leave a lasting
               impression. Our dedicated team works tirelessly to bring you the
-              best in entertainment, ensuring every event is a success.
+              best in entertainment, ensuring every event is a successWelcome to
+              The Big Barbeque, where indulgence meets culinary delight! We are
+              an all-you-can-eat buffet restaurant that takes your dining
+              experience to the next level. Since our opening in 2018, we have
+              been dedicated to serving a wide variety of 150+ delectable
+              dishes, making us a favourite destination for food enthusiasts..
             </Typography>
 
             <Typography variant="h2">
-              At [Vendor Name], we understand that every event is unique, and we
-              take pride in crafting experiences that are tailored to your
-              specific needs and desires. Whether you're planning an intimate
-              gathering or a grand celebration, our comprehensive range of
-              services ensures that every aspect of your event is meticulously
-              planned and flawlessly executed.
+              Our concept revolves around offering an unlimited feast, where you
+              can savour an array of mouth-watering flavours. Begin your
+              gastronomic journey with our barbeque starters, expertly grilled
+              and served right at your table. From there, delve into a diverse
+              selection of Indian, Chinese, and continental main courses, each
+              crafted with care and using the finest ingredients.
             </Typography>
 
             <Typography variant="h2">
-              Our expertise spans across various types of events, including
-              corporate functions, weddings, concerts, festivals, private
-              parties, and more. We believe that the key to a successful event
-              lies in the details, and our team pays close attention to every
-              element, from the initial concept and planning stages to the final
-              execution.
+              At The Big Barbeque, we strive to provide a warm and welcoming
+              environment where every customer feels at home. Our team is
+              dedicated to ensuring your comfort and creating an inviting
+              atmosphere that sets the stage for a remarkable dining experience.
             </Typography>
           </Box>
         </Grid>
@@ -73,7 +76,7 @@ const About = () => {
                 xs: "308px",
                 sm: "300px",
                 md: "400px",
-                lg: "400px",
+                lg: "480px",
               },
               marginTop: {
                 xs: "20px",

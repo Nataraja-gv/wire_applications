@@ -4,7 +4,7 @@ import { red, green } from "@mui/material/colors";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#8976fd",
+      main: "#A31916",
     },
     primary2: {
       main: "#8338EC",
@@ -60,7 +60,7 @@ export const theme = createTheme({
       backgroundClip: "text",
       transition: "color 0.3s ease-in-out",
       "&:hover": {
-        color: "#8976fd",
+        color: "#A31916",
       },
       cursor: "pointer",
     },
@@ -76,11 +76,12 @@ export const theme = createTheme({
 
     title: {
       display: "inline-block",
-      background:
-        "linear-gradient(141deg, rgba(131, 56, 236, 1) 0%, rgba(58, 134, 255, 1) 100%)",
-      backgroundClip: "text",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
+      // background:
+      //   "linear-gradient(141deg, rgba(131, 56, 236, 1) 0%, rgba(58, 134, 255, 1) 100%)",
+      // backgroundClip: "text",
+      // WebkitBackgroundClip: "text",
+      // WebkitTextFillColor: "transparent",
+      color:"#A31916",
       width: "fit-content",
       fontSize: "30px",
       fontWeight: "bold",
@@ -149,7 +150,7 @@ export const theme = createTheme({
       fontWeight: 700,
       lineHeight: "normal",
       textAlign: "center",
-      color: " #FFFFFF",
+      color: "white",
       "@media (max-width:600px)": {
         fontSize: "20px",
       },
@@ -177,10 +178,23 @@ export const theme = createTheme({
       color: "black",
     },
 
+    menuDescription: {
+      fontSize: "14px",
+      textAlign: "justify",
+      display: "-webkit-box",
+      WebkitLineClamp: 3,
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+      wordSpacing: "0px",
+    },
+
     menutitle: {
       textOverflow: "ellipsis",
+      display: "-webkit-box",
+      WebkitLineClamp: 1,
+      WebkitBoxOrient: "vertical",
       overflow: "hidden",
-      textWrap: "nowrap",
+      wordSpacing: "0px",
       fontWeight: "bold",
       fontSize: "18px",
       color: "#000000",
@@ -241,7 +255,7 @@ export const theme = createTheme({
       lineHeight: "20px",
       textAlign: "center",
       width: "350px",
-      color: "#0D0D0D",
+      color: "white",
 
       "@media (max-width:600px)": {
         fontSize: "14px",
@@ -427,7 +441,7 @@ export const theme = createTheme({
             alignContent: "center",
             textTransform: "capitalize",
             gap: "8px",
-            border: "1px solid #765c92",
+            border: "1px solid #A31916",
             opacity: 1,
             padding: "8px 30px",
 

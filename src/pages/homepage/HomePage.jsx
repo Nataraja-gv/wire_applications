@@ -22,7 +22,7 @@ const HomePage = () => {
         <OutLets />
       </div>
       <div id="event">
-        <Event />
+        {/* <Event /> */}
       </div>
       <div id="table" style={{ marginTop: "50px" }}>
         <BookTable />

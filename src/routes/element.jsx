@@ -23,3 +23,4 @@ const Loadable = (Component) => (props) =>
 export const HomePage = Loadable(lazy(() => import("../pages/homepage/HomePage")));
 
 export const MenuHomePage =Loadable(lazy(()=>import ("../pages/menu-home-page/MenuHomePage"))) ;
+export const  MenuSalad=Loadable(lazy(()=>import("../sections/menu-items-list/salad/MenuSalad")))

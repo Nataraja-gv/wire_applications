@@ -1,7 +1,7 @@
 import { Grid, Container } from "@mui/material";
 import { styled } from "@mui/system";
 import BookTableCard from "../../components/book-table/BookTablecard";
-import rectangle from "../../assets/table/reactangle.png"; // Corrected import path
+import rectangle from "../../assets/images1/bigbarbeque2.jpg"; // Corrected import path
 
 export default function BookTable() {
   const StyledDiv = styled('div')({

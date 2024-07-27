@@ -1,13 +1,12 @@
-import pub1 from "../../assets/caroursel/Images/slider1.png";
-import pub2 from "../../assets/caroursel/Images/slider5.jpg";
-// import pub3 from "../../assets/caroursel/Images/slider6.jpg";
-import pub3 from "../../assets/caroursel/Images/slider2.jpg";
+import pub1 from "../../assets/images1/bigbarbeque1.png";
+import pub2 from "../../assets/images1/bigbarbeque2.jpg";
+import pub3 from "../../assets/images1/bigbarbeque3.png";
 
 export const mainCarouseldata = [
   {
     id: 1,
     image: pub1,
-    title: "Experience Unforgettable Moments with Us",
+    title: "Savour the extravagant flavours with our buffet",
     btnName: "Explore Events",
     TableName: "Book a Table",
   },
@@ -15,14 +14,14 @@ export const mainCarouseldata = [
   {
     id: 2,
     image: pub2,
-    title: "Experience Unforgettable Moments with Us",
+    title: "Late Night Cravings? Indulge In The Biggest Buffet @ Rs.699*",
     btnName: "Explore Events",
     TableName: "Book a Table",
   },
   {
     id: 3,
     image: pub3,
-    title: "Experience Unforgettable Moments with Us",
+    title: "Elevate Your Meetings With Our Corporate Lunch Boxes",
     btnName: "Explore Events",
     TableName: "Book a Table",
   },
